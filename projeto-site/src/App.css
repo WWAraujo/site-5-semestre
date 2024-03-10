@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #021420; /* Cor de fundo do cabeçalho */
+  padding: auto;
+  color: white;
+  width: auto;
+  height: 125px;
+  position: relative;
+}
+
+.App-content {
+  background-color: #0d0c0c; /* Cor de fundo da área de conteúdo */
+  height: auto;
+}
+
+.App-footer {
+  position: absolute;
+  width: 100%;
+  background-color: #021420; /* Cor de fundo do rodapé */
+  color: white;
+  height: auto;
+}
+
+.App-h4-footer{
+  padding: 20px;
+}
+
+/* Media queries para ajustes em telas maiores */
+@media (min-width: 600px) {
+  .App-header{
+    padding: 20px;
+  }
+   
+}
+
+.App-logo {
+  width: 168px;
+  height: 85px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 20px;
+}
+
+.App-foto-inicio {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
