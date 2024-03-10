@@ -1,1 +1,7 @@
--- Projeto feito com react e Node 20.11.1 LTS
+<h1>  Projeto Integrador 5 Semestre </h1>
+
+> Em desenvolvimento
+
+<h2>  Nesse projeto Vamos usar </h2>
+<li> React </li>
+<li> Node js 20.11.1(LTS)</li> 
