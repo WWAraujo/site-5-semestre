@@ -1,5 +1,5 @@
-import logo from './assets/logo/logo-escuro.png';
-import fotoInicio from './assets/imagem/001.JPG'
+import logo from './imagem/logo-escuro.png';
+import fotoInicio from './imagem/001.JPG'
 import './App.css';
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
         alt="Foto com 4 drinks diferentes, 1 negroni, 1 moscow mule, 1 maracujack, 1 passione, e atrás dos drinks 3 garrafas usadas para fazer os drinks, Vodka, Aperou e Gin" />
       </main>
       <footer className="App-footer">
-        {/* Ícone do WhatsApp e COPYRIGHT aqui */}
         <h4 className="App-h4-footer">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</h4>
       </footer>
     </div>
