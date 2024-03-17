@@ -4,6 +4,8 @@ import Header from './header/header';
 import CardImage from './components/cardImage'
 import IconWhatsapp from './components/whatsapp';
 import Footer from './footer/footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 /**
  * Tela principal
@@ -15,11 +17,13 @@ function App() {
     <div className="App">
       
       {/* Realize o import do componente  */}
-      <Header />
-      <CardImage /> 
+      <div>
+        <Header />
+        <CardImage /> 
+        
+        <Footer />
+      </div>
       <IconWhatsapp />
-      <Footer />
-
     </div>
   );
 }
