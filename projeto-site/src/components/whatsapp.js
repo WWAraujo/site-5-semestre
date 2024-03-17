@@ -7,10 +7,10 @@ import 'react-whatsapp-widget/dist/index.css';
  */
 function IconWhatsapp() {
   return (
-    <div className="App">
-    <h1>Meu Site</h1>
+    <div className="App-whatsapp">
     <WhatsAppWidget 
-    phoneNumber="+5511959680087" message="Olá, como posso ajudar?"
+      phoneNumber="+5511959680087" 
+      message="Olá, como posso ajudar?"
     />
     </div>
   );
