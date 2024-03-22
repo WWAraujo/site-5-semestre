@@ -5,6 +5,7 @@ import CardImage from './components/cardImage'
 import IconWhatsapp from './components/whatsapp';
 import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './components/about';
 
 
 /**
@@ -20,6 +21,7 @@ function App() {
       <div>
         <Header />
         <CardImage /> 
+        <About />
         
         <Footer />
       </div>
