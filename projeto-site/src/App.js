@@ -3,9 +3,12 @@ import 'react-whatsapp-widget/dist/index.css';
 import Header from './header/header';
 import CardImage from './components/cardImage'
 import IconWhatsapp from './components/whatsapp';
+import Carousel from './components/carousel';
 import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/about';
+import 'swiper/css/bundle';
+
 
 
 /**
@@ -22,6 +25,7 @@ function App() {
         <Header />
         <CardImage /> 
         <About />
+        <Carousel/>
         
         <Footer />
       </div>
