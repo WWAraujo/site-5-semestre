@@ -19,7 +19,7 @@ jobs:
           node-version: 20
       - run: cd projeto-site
       - run: npm install
-      - run: npm build
+      - run: npm rum build
 
   publish-npm:
     needs: build
