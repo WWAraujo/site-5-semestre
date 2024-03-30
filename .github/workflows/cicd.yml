@@ -9,7 +9,19 @@ on:
       - main 
 
 jobs:
-  build:
+  install-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+            
+      - run: cd projeto-site
+      - run: npm ci
+          
+  build-npm:
+    needs: install-npm
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,33 +29,10 @@ jobs:
         with:
           node-version: 20
 
-      - run: |
-          npm install
-          npm run build
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: http://testesitewallace.s3-website-us-east-1.amazonaws.com
-      
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Publish to npm
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-
+      - run: npm run build
+  
   deploy:
-    needs: publish-npm
+    needs: build-npm
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
