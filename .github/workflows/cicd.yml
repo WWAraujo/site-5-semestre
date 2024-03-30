@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+      - run: npm cache clean --force
       - run: cd projeto-site
       - run: npm install
       - run: npm run build
