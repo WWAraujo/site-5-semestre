@@ -18,7 +18,7 @@ jobs:
           node-version: 20
             
       - run: cd projeto-site
-      - run: npm ci
+      - run: npm install
           
   build-npm:
     needs: install-npm
