@@ -30,6 +30,7 @@ jobs:
           node-version: 20
       
       - run: cd projeto-site
+      - run: ls 
       - run: npm run build
   
   deploy:
