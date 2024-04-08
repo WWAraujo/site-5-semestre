@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import logo from '../imagem/logo-escuro.png';
 import '../App.css';
 import 'react-whatsapp-widget/dist/index.css';
@@ -7,29 +8,32 @@ import 'react-whatsapp-widget/dist/index.css';
  */
 function Header() {
   return (
-      <header className="App-header">
-        <div class="container text-center">
-          <div class="row text-center">
-            <div class="col-sm-3">
-              <img className="App-logo" src={logo}alt="Logo da Arte Vieira"/>
-            </div>
+    <header className="App-header">
+      <div class="logo">
+        <img className="App-logo" src={logo} alt="Logo da Arte Vieira" />
+      </div>
+      <div class="container-header">
+        <input type="checkbox" id="menu" class="container__button" />
+        <label for="menu">
+          <span class="burguer-menu__header container__image"></span>
+        </label>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-link">Home</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-link">Quem Somos</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-link">Tipos de Eventos</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-link">Solicitar Orçamento</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-            <div class="col-2">
-              Home
-            </div>
-            <div class="col-2">
-              Quem Somos
-            </div>
-            <div class="col-2">
-              Tipos de Eventos
-            </div>
-            <div class="col-2">
-              Solicitar Orçamento
-            </div>
-          </div>
-        </div>
-      </header>
-    
   );
 }
 

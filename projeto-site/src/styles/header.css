@@ -1,0 +1,66 @@
+.App-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    width: 100%;
+    height: 125px;
+    position: relative;
+}
+
+.App-logo {
+    width: 50%;
+}
+
+.burguer-menu__header {
+    width: 24px;
+    height: 24px;
+    background-image: url(../imagem/Menu.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__image {
+    padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 60vw;
+    background-color: #021420;
+}
+
+.container__button:checked~.menu-list {
+    display: block;
+}
+
+.menu-list-item {
+    text-align: center;
+    padding: 1em 3em 1em 1em;
+    background-color: #021420;
+}
+
+.menu-list-link {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.container__button {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+  }

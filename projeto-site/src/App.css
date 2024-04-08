@@ -1,50 +1,15 @@
-.App {
+@import url("styles/carousel.css");
+@import url("styles/header.css");
+@import url("styles/about.css");
+
+.App{
   text-align: center;
   color: white;
   background-color: #021420;
 }
 
-.App-header {
-  padding: 20px;
-  width: auto;
-  height: 125px;
-  position: relative;
-}
-
 .App-content {
   height: auto;
-}
-
-.swiper-container{
-  width: 100%;
-  margin: 20px auto;
-  height: 80vh;
-  overflow: hidden;
-}
-
-.swiper-slide{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  padding: 2%;
-}
-
-.App-content-caroussel{
-  display: flex;
-  align-items: center;
-}
-
-.App-content-text-carousel{
-  margin: auto;
-}
-
-.App-image{
-  width: 50%;
-  height: 500px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .App-footer {
@@ -56,22 +21,6 @@
 
 .App-h4-footer{
   padding: 20px;
-}
-
-/* Media queries para ajustes em telas maiores */
-@media (min-width: 600px) {
-  .App-header{
-    padding: 20px;
-  }
-   
-}
-
-.App-logo {
-  width: 168px;
-  height: 85px;
-  position: absolute;
-  left: 5%;
-  top: 10%;
 }
 
 .App-foto-inicio {
