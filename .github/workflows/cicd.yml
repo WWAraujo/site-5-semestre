@@ -18,7 +18,7 @@ jobs:
           node-version: 20
             
       - run: cd projeto-site
-      - run: npm install
+      - run: yarn install
           
   build-npm:
     needs: install-npm
@@ -31,7 +31,7 @@ jobs:
           
       - run: cd projeto-site
       - run: ls 
-      - run: npm run react-scripts build
+      - run: yarn build
   
   deploy:
     needs: build-npm
