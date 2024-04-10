@@ -19,6 +19,7 @@ jobs:
             
       - run: cd projeto-site
       - run: yarn install
+      - run: yarn run build
           
   build-npm:
     needs: install-npm
