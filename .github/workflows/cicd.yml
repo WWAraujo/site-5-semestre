@@ -31,7 +31,7 @@ jobs:
           
       - run: cd projeto-site
       - run: ls 
-      - run: npm run build
+      - run: npm run react-scripts build
   
   deploy:
     needs: build-npm
