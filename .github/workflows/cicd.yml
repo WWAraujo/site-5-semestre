@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-
-      - run: |
+      - name: Install dependencies and build
+      run: |
       cd projeto-site
       npm install
       ls 
