@@ -17,10 +17,8 @@ jobs:
         with:
           node-version: 20
 
-      - run: 
-      ls 
+      - run: |
       cd projeto-site
-      ls 
       npm install
       ls 
       npm build
