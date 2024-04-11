@@ -4,9 +4,9 @@
 name: Wallace CI - Continuous Integration
 
 on:
-  pull_request:  
-    branches: 
-      - main 
+  pull_request:
+    branches:
+      - main
 
 jobs:
   install-npm:
@@ -17,12 +17,12 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies and build
-      run: |
-      cd projeto-site
-      npm install
-      ls 
-      npm build
-          
+        run: |
+          cd projeto-site
+          npm install
+          npm run build
+          ls
+
   build-npm:
     needs: install-npm
     runs-on: ubuntu-latest
@@ -31,11 +31,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          
-      - run: cd projeto-site
-      - run: ls 
-      - run: yarn build
-  
+      - name: Build with Yarn
+        run: |
+          cd projeto-site
+          ls
+          yarn build
+
   deploy:
     needs: build-npm
     runs-on: ubuntu-latest
