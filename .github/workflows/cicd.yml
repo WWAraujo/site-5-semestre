@@ -17,14 +17,13 @@ jobs:
         with:
           node-version: 20
 
-      - run: ls 
-      - run: cd projeto-site
-      - run: ls 
-      - run: npm install
-      - run: ls 
-      - run: cd projeto-site
-      - run: ls
-      - run: npm build
+      - run: | 
+      ls 
+      cd projeto-site
+      ls 
+      npm install
+      ls 
+      npm build
           
   build-npm:
     needs: install-npm
