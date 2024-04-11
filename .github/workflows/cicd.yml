@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: | 
+      - run: 
       ls 
       cd projeto-site
       ls 
