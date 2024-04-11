@@ -19,7 +19,6 @@ jobs:
             
       - run: cd projeto-site
       - run: npm install
-      - run: npm start
       - run: ls 
       - run: npm build
           
