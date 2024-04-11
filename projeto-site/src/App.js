@@ -8,8 +8,8 @@ import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/about';
 import 'swiper/css/bundle';
-
-
+import MenuMobile from './components/menuMobile'
+import useState from "react";
 
 /**
  * Tela principal
@@ -17,11 +17,18 @@ import 'swiper/css/bundle';
  * manter área organizada para um código clean
  */
 function App() {
+  // const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <div className="App">
       
       {/* Realize o import do componente  */}
       <div>
+        {/* <MenuMobile
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        /> */}
+        {/* <Header setMenuIsVisible={setMenuIsVisible}/> */}
         <Header />
         <CardImage /> 
         <About />
