@@ -23,22 +23,8 @@ jobs:
           npm run build
           ls
 
-  build-npm:
-    needs: install-npm
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-      - name: Build with Yarn
-        run: |
-          cd projeto-site
-          ls
-          yarn build
-
   deploy:
-    needs: build-npm
+    needs: install-npm
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
