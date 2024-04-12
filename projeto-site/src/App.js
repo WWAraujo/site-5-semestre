@@ -8,8 +8,8 @@ import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/about';
 import 'swiper/css/bundle';
-import MenuMobile from './components/menuMobile'
-import useState from "react";
+// import MenuMobile from './components/menuMobile'
+// import useState from "react";
 
 /**
  * Tela principal
@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App">
       
-      {/* Realize o import do componente  */}
       <div>
         {/* <MenuMobile
           menuIsVisible={menuIsVisible}
