@@ -13,6 +13,10 @@
 
 .App{
   background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  min-width: 250px; 
 }
 
 

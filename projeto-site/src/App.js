@@ -11,14 +11,7 @@ import About from './components/about';
 import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css/bundle';
-// import MenuMobile from './components/menuMobile'
-// import useState from "react";
 
-/**
- * Tela principal
- * TODO: Evitar criar muito código nessa tela, caso necessário criar novos componentes e mapear aqui, 
- * manter área organizada para um código clean
- */
 
 function App() {
   // const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -27,12 +20,8 @@ function App() {
     <div className="App">
       
       <div>
-        {/* <MenuMobile
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        /> */}
-        {/* <Header setMenuIsVisible={setMenuIsVisible}/> */}
         <Header />
+
         <CardImage />
         <About />
         <Carousel />
@@ -40,6 +29,7 @@ function App() {
 
         <Footer />
       </div>
+
       <IconWhatsapp />
     </div>
   );

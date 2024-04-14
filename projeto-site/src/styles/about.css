@@ -1,5 +1,5 @@
 .container{
-    margin: 0;
+    margin: 20px;
     padding: 0;
     width: 100%;
 }
@@ -9,33 +9,29 @@
 }
 
 .about-title-content h1{
-    font-size: 18px;
-    color: var(--branco);
+    font-size: 20px;
     font-family: var(--fonte-principal);
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .about-title-content p{
-    font-size: 10px;
-    color: var(--branco);
+    font-size: 14px;
     font-family: var(--fonte-principal);
-    font-weight: 400;
+    font-weight: 300;
     text-align: justify;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .about-title-content h1{
-        font-size: 18px;
-        color: var(--branco);
+        font-size: 20px;
         font-family: var(--fonte-principal);
         font-weight: 600;
     }
     
     .about-title-content p{
-        color: var(--branco);
-        font-size: 12px;
+        font-size: 16px;
         text-align: justify;
-        font-weight: 400;
+        font-weight: 300;
     }
 }
 
@@ -47,15 +43,13 @@
     }
 
     .about-title-content h1{
-        font-size: 18px;
-        color: var(--branco);
+        font-size: 20px;
         font-family: var(--fonte-principal);
         font-weight: 600;
     }
     
     .about-title-content p{
-        color: var(--branco);
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         font-weight: 400;
     }

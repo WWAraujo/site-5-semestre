@@ -9,7 +9,7 @@ function Footer() {
     <div className="App">
       <hr></hr>
       <footer className="App-footer">
-        <p className="footer__text">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</p>
+        <p className="footer__text text-center">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</p>
       </footer>      
     </div>
   );

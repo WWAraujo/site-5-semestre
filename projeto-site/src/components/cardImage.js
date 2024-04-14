@@ -1,6 +1,7 @@
 import fotoInicio from '../imagem/001.JPG'
 import '../App.css';
 import 'react-whatsapp-widget/dist/index.css';
+import './../styles/cardImage.css'
 
 /**
  * Icone com imagem
@@ -8,10 +9,12 @@ import 'react-whatsapp-widget/dist/index.css';
  */
 function CardImage() {
   return (
-    <div>
-      <img className="img-fluid" src={fotoInicio} 
-      alt="Foto com 4 drinks diferentes, 1 negroni, 1 moscow mule, 1 maracujack, 1 passione, e atrás dos drinks 3 garrafas usadas para fazer os drinks, Vodka, Aperou e Gin" />
-      
+    <div className="container">
+      <div className="imagem-container">
+        <img className="imagem-maxima" 
+          src={fotoInicio} 
+          alt="Foto com 4 drinks diferentes, 1 negroni, 1 moscow mule, 1 maracujack, 1 passione, e atrás dos drinks 3 garrafas usadas para fazer os drinks, Vodka, Aperou e Gin" />
+      </div>
     </div>
   );
 }
