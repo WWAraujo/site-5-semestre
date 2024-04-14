@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site-5-semestre/static/css/main.3f4deef7.css",
-    "main.js": "/site-5-semestre/static/js/main.765069a0.js",
+    "main.css": "/site-5-semestre/static/css/main.07bbf03e.css",
+    "main.js": "/site-5-semestre/static/js/main.c5a10218.js",
     "static/js/453.fb826adb.chunk.js": "/site-5-semestre/static/js/453.fb826adb.chunk.js",
     "static/media/001.JPG": "/site-5-semestre/static/media/001.e5df4c7c6d8e1a2eca22.JPG",
     "static/media/Img 05 Carrossel.jpeg": "/site-5-semestre/static/media/Img 05 Carrossel.cfb0d26edfcf85fff10a.jpeg",
@@ -11,12 +11,12 @@
     "static/media/logo-escuro.png": "/site-5-semestre/static/media/logo-escuro.c46b79423a66cfbabdc7.png",
     "static/media/Img 03 Carrossel.jpeg": "/site-5-semestre/static/media/Img 03 Carrossel.b86917b15bcec0f41952.jpeg",
     "index.html": "/site-5-semestre/index.html",
-    "main.3f4deef7.css.map": "/site-5-semestre/static/css/main.3f4deef7.css.map",
-    "main.765069a0.js.map": "/site-5-semestre/static/js/main.765069a0.js.map",
+    "main.07bbf03e.css.map": "/site-5-semestre/static/css/main.07bbf03e.css.map",
+    "main.c5a10218.js.map": "/site-5-semestre/static/js/main.c5a10218.js.map",
     "453.fb826adb.chunk.js.map": "/site-5-semestre/static/js/453.fb826adb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f4deef7.css",
-    "static/js/main.765069a0.js"
+    "static/css/main.07bbf03e.css",
+    "static/js/main.c5a10218.js"
   ]
 }
