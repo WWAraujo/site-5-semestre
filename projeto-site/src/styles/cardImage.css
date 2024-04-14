@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*min-height:  100vh; /*Garante que o conteúdo ocupe toda a altura da viewport */
+  }
+  
+  .imagem-container {
+    max-width: 100%;
+    margin: 20px auto; /* Adiciona margem em cima e em baixo e centraliza horizontalmente */
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+  }
+  
+  .imagem-maxima {
+    max-width: 100%; /* Ajusta o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }

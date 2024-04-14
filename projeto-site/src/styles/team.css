@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .team {

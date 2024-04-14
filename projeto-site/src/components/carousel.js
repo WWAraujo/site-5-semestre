@@ -14,10 +14,10 @@ function Carousel() {
             autoheight: true,
             loop: true,
             speed: 1000,
-            // autoplay: {
-            //     delay: 3000,
-            //     pauseOnMouseEnter: true,
-            // },
+            autoplay: {
+                delay: 3000,
+                pauseOnMouseEnter: true,
+            },
             effect: 'coverflow',
             coverflowEffect: {
                 rotate: 50,
