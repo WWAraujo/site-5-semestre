@@ -1,19 +1,16 @@
 .title-carousel{
     text-align: center;
     font-size: 18px;
-    color: var(--branco);
 }
 
 .title-slide{
     font-family: var(--fonte-principal);
     font-size: 14px;
-    color: var(--branco);
 }
 
 .text-slide{
     font-family: var(--fonte-principal);
     font-size: 10px;
-    color: var(--branco);
 }
 
 .swiper {
@@ -54,7 +51,6 @@
 
 div.swiper-button-next,
 div.swiper-button-prev {
-    color: #ffffff;
     display: none;
 }
 
@@ -83,7 +79,6 @@ div.swiper-button-prev {
 
     div.swiper-button-next,
     div.swiper-button-prev {
-        color: #ffffff;
         display: none;
     }
 
@@ -133,7 +128,6 @@ div.swiper-button-prev {
 
     div.swiper-button-next,
     div.swiper-button-prev {
-        color: #ffffff;
         display: block;
     }
 

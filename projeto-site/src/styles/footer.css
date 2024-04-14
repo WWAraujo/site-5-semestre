@@ -6,11 +6,3 @@
     height: 80px;
     background-color: var(--cor-de-fundo);
 }
-
-.footer__text {
-    font-family: var(--fonte-principal);
-    color: var(--branco);
-    font-size: 9px;
-
-
-}

@@ -9,51 +9,39 @@
 
 .team {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 0 0.5em;
 }
 
-.team-title h2{
-    color: var(--branco);
-    font-size: 14px;
-}
-
-.team h3 {
-    font-family: var(--fonte-principal);
-    font-size: 10px;
-    font-weight: 500;
+.team-title h3{
+    margin-bottom: 30px;
 }
 
 .team h6 {
     font-family: var(--fonte-principal);
-    font-size: 12px;
     font-weight: 300;
 }
 
-.team-person-marketing {
+.team-person {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--branco);
 }
 
-.team-person-operation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--branco);
-}
+@media screen and (max-width: 767px) {
 
-.team-person-financial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--branco);
+    .team {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-person {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+    }
 }

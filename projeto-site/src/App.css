@@ -13,14 +13,10 @@
 
 .App{
   background-color: var(--cor-de-fundo);
+  color: var(--branco);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* min-height: 100vh; */
-   /* Garante que o conteúdo ocupe toda a altura da viewport */
   min-width: 250px; 
-  /* Define o tamanho mínimo da largura da tela */
 }
 
 

@@ -14,20 +14,20 @@ function Team(){
     return(
         <div className="container-team">
             <div class="team-title">
-                    <h2>{subTitle}</h2>
+                    <h3>{subTitle}</h3>
                 </div>
                 <div class="team">
-                    <div class="team-person-marketing">
-                        <h3>{market}</h3>
-                        <h6>{felipe}</h6>
+                    <div class="team-person">
+                        <h6>{market}</h6>
+                        <h5>{felipe}</h5>
                     </div>
-                    <div class="team-person-operation">
-                        <h3>{operation}</h3>
-                        <h6>{marcelo}</h6>
+                    <div class="team-person">
+                        <h6>{operation}</h6>
+                        <h5>{marcelo}</h5>
                     </div>
-                    <div class="team-person-financial">
-                        <h3>{finance}</h3>
-                        <h6>{wallace}</h6>
+                    <div class="team-person">
+                        <h6>{finance}</h6>
+                        <h5>{wallace}</h5>
                     </div>
                 </div>
         </div>
