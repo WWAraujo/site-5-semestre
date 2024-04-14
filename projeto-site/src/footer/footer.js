@@ -7,8 +7,9 @@ import 'react-whatsapp-widget/dist/index.css';
 function Footer() {
   return (
     <div className="App">
+      <hr></hr>
       <footer className="App-footer">
-        <h5 className="App-h4-footer">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</h5>
+        <p className="footer__text">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</p>
       </footer>      
     </div>
   );

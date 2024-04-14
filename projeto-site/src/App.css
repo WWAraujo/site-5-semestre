@@ -1,31 +1,21 @@
 @import url("styles/carousel.css");
 @import url("styles/header.css");
 @import url("styles/about.css");
+@import url("styles/team.css");
+@import url("styles/footer.css");
+@import url("styles/main-image.css");
+
+:root{
+  --fonte-principal: "Poppins";
+  --cor-de-fundo: #021420;
+  --branco:#ffffff;
+}
 
 .App{
-  text-align: center;
-  color: white;
-  background-color: #021420;
+  background-color: var(--cor-de-fundo);
 }
 
-.App-content {
-  height: auto;
-}
 
-.App-footer {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: #021420;
-}
 
-.App-h4-footer{
-  padding: 20px;
-}
 
-.App-foto-inicio {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
  

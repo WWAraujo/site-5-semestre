@@ -5,51 +5,58 @@
 }
 
 .container-about{
-    margin-top: 10px;
-    width: 100%;
+    padding: 1em;
 }
 
-.team-title-content h1{
+.about-title-content h1{
     font-size: 18px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
 }
 
-.team-title-content h4{
-    font-size: 12px;
+.about-title-content p{
+    font-size: 10px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
     text-align: justify;
 }
 
-.team-title h2{
-    font-size: 14px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about-title-content h1{
+        font-size: 18px;
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+        font-weight: 600;
+    }
+    
+    .about-title-content p{
+        color: var(--branco);
+        font-size: 12px;
+        text-align: justify;
+        font-weight: 400;
+    }
 }
 
-.team{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-}
+@media screen and (min-width:1025px){
+    .container-about{
+        width: 50%;
+        line-height: 1.5em;
+        padding: 1em;
+    }
 
-.team-person-marketing{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.team-person-operacao{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.team-person-financeiro{
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.team h3{
-    font-size: 12px;
-}
-
-.team h6{
-    font-size: 10px;
+    .about-title-content h1{
+        font-size: 18px;
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+        font-weight: 600;
+    }
+    
+    .about-title-content p{
+        color: var(--branco);
+        font-size: 14px;
+        text-align: justify;
+        font-weight: 400;
+    }
 }

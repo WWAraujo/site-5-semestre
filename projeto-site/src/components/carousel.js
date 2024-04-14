@@ -14,9 +14,14 @@ function Carousel() {
             autoheight: true,
             loop: true,
             speed: 1000,
-            autoplay: {
-                delay: 5000,
-                pauseOnMouseEnter: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     pauseOnMouseEnter: true,
+            // },
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 50,
+                slideShadows: false
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -26,65 +31,66 @@ function Carousel() {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             },
-            pagination:{
+            pagination: {
                 el: '.swiper-pagination'
-            }
+            },
         });
     }, []);
 
     return (
 
         <section className="swiper">
-            <h1 className="title-carousel">Conheça nosso Cardapio</h1>
+            <h1 className="title-carousel">Cartela de Drinks</h1>
             <div className="swiper-wrapper">
                 <div className="swiper-slide">
-                    <div className="App-content-caroussel">
+                    <div className="App-content-carousel">
                         <img className="App-image" src={imagem1} alt="Imagem 1 Carossel" id="imagecarousel1" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
-                            <p className="text-slide">Texto</p>
+                            <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
                         </div>
                     </div>
                 </div>
                 <div className="swiper-slide">
-                    <div className="App-content-caroussel">
+                    <div className="App-content-carousel">
                         <img className="App-image" src={imagem2} alt="Imagem 2 Carossel" id="imagecarousel2" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
-                            <p className="text-slide">Texto</p>
+                            <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
                         </div>
                     </div>
                 </div>
                 <div className="swiper-slide">
-                    <div className="App-content-caroussel">
+                    <div className="App-content-carousel">
                         <img className="App-image" src={imagem3} alt="Imagem 3 Carossel" id="imagecarousel3" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
-                            <p className="text-slide">Texto</p>
+                            <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
                         </div>
                     </div>
                 </div>
                 <div className="swiper-slide">
-                    <div className="App-content-caroussel">
+                    <div className="App-content-carousel">
                         <img className="App-image" src={imagem4} alt="Imagem 4 Carossel" id="imagecarousel4" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
-                            <p className="text-slide">Texto</p>
+                            <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
                         </div>
                     </div>
                 </div>
                 <div className="swiper-slide">
-                    <div className="App-content-caroussel">
+                    <div className="App-content-carousel">
                         <img className="App-image" src={imagem5} alt="Imagem 5 Carossel" id="imagecarousel5" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
-                            <p className="text-slide">Texto</p>
+                            <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
+            <div classname="swiper-pagination"></div>
 
 
         </section>
