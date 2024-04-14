@@ -1,0 +1,47 @@
+.container-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.team-title h3{
+    margin-bottom: 30px;
+}
+
+.team h6 {
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+}
+
+.team-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .team {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-person {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+    }
+}

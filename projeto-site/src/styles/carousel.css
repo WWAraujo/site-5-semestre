@@ -1,0 +1,182 @@
+.title-carousel{
+    text-align: center;
+    font-size: 18px;
+}
+
+.title-slide{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+.text-slide{
+    font-family: var(--fonte-principal);
+    font-size: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.swiper-slide {
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    grid-row: 1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to top, transparent 20%, gray 50%);
+}
+
+.App-content-carousel {
+    display: flex; 
+}
+
+.App-content-text-carousel {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+    display: none;
+}
+
+#imagecarousel1 {
+    object-position: center -2em;
+}
+
+#imagecarousel2 {
+    object-position:  center 80%;
+}
+
+#imagecarousel3 {
+    object-position: center 70%;
+}
+
+#imagecarousel4 {
+    object-position: center 63%;
+
+}
+
+#imagecarousel5 {
+    object-position: center 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+        display: none;
+    }
+
+    .App-content-carousel {
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 400px;
+        
+    }
+
+    #imagecarousel1 {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #imagecarousel2 {
+        object-position: center 90%;
+        object-fit: cover;
+    }
+
+    #imagecarousel3 {
+        object-position: center 80%;
+        object-fit: cover;
+    }
+
+    #imagecarousel4 {
+        object-position: 0em -10em;
+    }
+
+    #imagecarousel5 {
+        object-position: center 100%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    .swiper{
+        margin: 5em;
+        width: 80%;
+        height: 80vh;
+    }
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+        display: block;
+    }
+
+    .swiper-slide img {
+        width: 50%;
+        height: 100vh;
+        mask-image: linear-gradient(to left, transparent 2%, gray 50%);
+    }
+
+    .App-content-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .App-content-text-carousel {
+        top: 0 !important;
+        bottom: 0 !important;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 100%;
+    }
+
+    #imagecarousel1 {
+        object-position: center -5cm;
+        object-fit: cover;
+    }
+
+    #imagecarousel2 {
+        object-position: 0cm -5cm;
+        object-fit: cover;
+    }
+
+    #imagecarousel3 {
+        object-position: 0 -5.3cm;
+        object-fit: cover;
+    }
+
+    #imagecarousel4 {
+        object-position: 0 -4.5cm;
+        object-fit: cover;
+    }
+
+    #imagecarousel5 {
+        object-position: 0 -6.8cm;
+        object-fit: cover;
+    }
+}

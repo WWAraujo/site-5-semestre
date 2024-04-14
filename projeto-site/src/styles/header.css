@@ -1,0 +1,222 @@
+.App-header {
+    position: sticky;
+    top: 5px;
+    background-color: var(--cor-de-fundo);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    z-index: 2;
+}
+
+.logo__image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 150px;
+    height: 70px;
+    object-position: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    padding: 0.5em;
+}
+
+.container-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 10%;
+}
+
+.logo-social-media{
+    width: 20px;
+}
+
+.burguer-menu__header {
+    width: 24px;
+    height: 24px;
+    background-image: url(../imagem/Menu.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__image {
+    padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 60vw;
+    height: 70vh;
+    padding: 0;
+    border: 1px solid var(--branco);
+    background-color: #021420;
+}
+
+.menu-list p{
+    color: var(--branco);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font: 10px var(--fonte-principal);
+    
+}
+
+.container__button:checked~.menu-list {
+    display: block;
+}
+
+.menu-list-item {
+    text-align: center;
+    background-color: #021420;
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+.menu-list-link {
+    font: 14px var(--fonte-principal);
+    font-weight: 700;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;  
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    padding: 1em 3em;
+    
+}
+
+.container__button {
+    display: none;
+}
+
+.menu-extensive {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .App-header {
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 35% 65%;
+        justify-content: space-between;
+    }
+
+    .logo__image {
+        width: 150px;
+        height: 70px;
+        object-position: center;
+    }
+
+    .header-logo {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 10%;
+    }
+
+    .menu-extensive {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu__item {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .menu__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .burguer-menu__header {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .App-header {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1;
+        height: 100%;
+    }
+
+    .header-logo {
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .logo__image{
+        width: 170px;
+        height: 100%;
+        padding: 0.3em;
+    }
+
+    .menu-extensive {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .menu__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .menu__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .burguer-menu__header {
+        display: none;
+    }
+}

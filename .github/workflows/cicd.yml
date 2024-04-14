@@ -4,33 +4,44 @@
 name: Wallace CI - Continuous Integration
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:  
-    branches: [ main ]
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  install-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: cd projeto-site
-      - run: npm install
-      - run: npm rum build
+      - name: Install dependencies and build
+        run: |
+          cd projeto-site
+          npm install
+          npm run build
+          ls
 
-  publish-npm:
-    needs: build
+  deploy:
+    needs: install-npm
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          node-version: 20
-          registry-url: http://testesitewallace.s3-website-us-east-1.amazonaws.com
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      - name: Sync files with S3 bucket
+        run: |
+          aws s3 sync ./projeto-site s3://http://testesitewallace.s3-website-us-east-1.amazonaws.com --delete
