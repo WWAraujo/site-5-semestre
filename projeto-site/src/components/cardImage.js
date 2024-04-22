@@ -9,7 +9,7 @@ import './../styles/cardImage.css'
  */
 function CardImage() {
   return (
-    <div className="container">
+    <div className="container-image">
       <div className="imagem-container">
         <img className="imagem-maxima" 
           src={fotoInicio} 

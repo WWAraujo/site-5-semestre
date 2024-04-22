@@ -33,6 +33,9 @@ function Header() {
           <li class="menu-list-item">
             <a href="#" class="menu-list-link">Solicitar Orçamento</a>
           </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-link">Contato</a>
+          </li>
           <li class="social-media">
             <a href="#" class="icon-instagram"><img className="logo-social-media" src={instagram} alt="instagram"/></a>
             <a href="#" class="icon-facebook"><img className="logo-social-media"src={facebook} alt="facebook"/></a>
@@ -45,6 +48,7 @@ function Header() {
           <li class="menu__item"><a href="#" class="menu__link">Quem Somos</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Eventos</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Solicitar Orçamento</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Contato</a></li>
         </ul>
       </div>
 

@@ -20,8 +20,15 @@ function Carousel() {
             },
             effect: 'coverflow',
             coverflowEffect: {
-                rotate: 50,
-                slideShadows: false
+                depth: 0,
+                modifier: 0.2,
+                rotate: 100,
+                scale: 0,
+                slideShadows: false,
+                stretch: 20
+            },
+            controller: {
+                effect: 'thumbs'
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -32,7 +39,8 @@ function Carousel() {
                 prevEl: '.swiper-button-prev'
             },
             pagination: {
-                el: '.swiper-pagination'
+                el: '.swiper-pagination',
+                type: 'bullets',
             },
         });
     }, []);
@@ -53,7 +61,7 @@ function Carousel() {
                 </div>
                 <div className="swiper-slide">
                     <div className="App-content-carousel">
-                        <img className="App-image" src={imagem2} alt="Imagem 2 Carossel" id="imagecarousel2" />
+                        <img className="App-image" src={imagem2} alt="Imagem 1 Carossel" id="imagecarousel2" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
                             <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
@@ -62,7 +70,7 @@ function Carousel() {
                 </div>
                 <div className="swiper-slide">
                     <div className="App-content-carousel">
-                        <img className="App-image" src={imagem3} alt="Imagem 3 Carossel" id="imagecarousel3" />
+                        <img className="App-image" src={imagem3} alt="Imagem 1 Carossel" id="imagecarousel3" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
                             <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
@@ -71,7 +79,7 @@ function Carousel() {
                 </div>
                 <div className="swiper-slide">
                     <div className="App-content-carousel">
-                        <img className="App-image" src={imagem4} alt="Imagem 4 Carossel" id="imagecarousel4" />
+                        <img className="App-image" src={imagem4} alt="Imagem 1 Carossel" id="imagecarousel4" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
                             <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
@@ -80,7 +88,7 @@ function Carousel() {
                 </div>
                 <div className="swiper-slide">
                     <div className="App-content-carousel">
-                        <img className="App-image" src={imagem5} alt="Imagem 5 Carossel" id="imagecarousel5" />
+                        <img className="App-image" src={imagem5} alt="Imagem 1 Carossel" id="imagecarousel5" />
                         <div className="App-content-text-carousel">
                             <h1 className="title-slide">Titulo</h1>
                             <p className="text-slide">TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto</p>
@@ -90,9 +98,6 @@ function Carousel() {
             </div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
-            <div classname="swiper-pagination"></div>
-
-
         </section>
 
     )

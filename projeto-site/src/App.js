@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './header/header';
 import CardImage from './components/cardImage'
 import IconWhatsapp from './components/whatsapp';
+import About from './components/about';
 import Carousel from './components/carousel';
 import Team from './components/team';
-import About from './components/about';
+import Contato from './components/contato';
 import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css/bundle';
@@ -26,6 +27,7 @@ function App() {
         <About />
         <Carousel />
         <Team/>
+        <Contato/>
 
         <Footer />
       </div>

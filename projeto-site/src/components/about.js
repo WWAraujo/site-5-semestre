@@ -14,17 +14,14 @@ function About() {
 
 
     return (
-        <div className="container">
-            <div className="container-about">
-                <div class="about-introdution">
-                    <div class="about-title-content">
-                        <h1>{title}</h1>
-                        <p>{content}</p>
-                    </div>
+        <div className="container-about">
+            <div class="about-introdution">
+                <div class="about-title-content">
+                    <h1>{title}</h1>
+                    <p>{content}</p>
                 </div>
             </div>
         </div>
-
     )
 
 }

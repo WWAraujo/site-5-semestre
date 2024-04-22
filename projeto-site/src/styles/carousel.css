@@ -1,19 +1,22 @@
-.title-carousel{
+.title-carousel {
     text-align: center;
     font-size: 18px;
 }
 
-.title-slide{
+.title-slide {
     font-family: var(--fonte-principal);
     font-size: 14px;
 }
 
-.text-slide{
+.text-slide {
     font-family: var(--fonte-principal);
     font-size: 10px;
 }
 
 .swiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -35,7 +38,7 @@
 }
 
 .App-content-carousel {
-    display: flex; 
+    display: flex;
 }
 
 .App-content-text-carousel {
@@ -54,12 +57,24 @@ div.swiper-button-prev {
     display: none;
 }
 
+div.swiper-pagination {
+    position: initial;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--branco) !important;
+}
+
+.swiper-pagination-bullet {
+    background: var(--branco) !important;
+}
+
 #imagecarousel1 {
     object-position: center -2em;
 }
 
 #imagecarousel2 {
-    object-position:  center 80%;
+    object-position: center 80%;
 }
 
 #imagecarousel3 {
@@ -84,13 +99,13 @@ div.swiper-button-prev {
 
     .App-content-carousel {
         grid-template-columns: 50% 50%;
-        
+
     }
 
     .swiper-slide img {
         width: 100%;
         height: 400px;
-        
+
     }
 
     #imagecarousel1 {
@@ -120,63 +135,95 @@ div.swiper-button-prev {
 
 @media screen and (min-width: 1025px) {
 
-    .swiper{
-        margin: 5em;
-        width: 80%;
-        height: 80vh;
+    .swiper {
+        margin: 3% 0;
+        padding: 1% !important;
+        width: 100%;
+        height: 100%;
     }
 
-    div.swiper-button-next,
-    div.swiper-button-prev {
-        display: block;
-    }
-
-    .swiper-slide img {
-        width: 50%;
-        height: 100vh;
-        mask-image: linear-gradient(to left, transparent 2%, gray 50%);
-    }
-
-    .App-content-carousel {
+    .swiper-slide {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
+    .App-content-carousel {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .App-content-carousel>img {
+        width: 80%;
+        height: 60vh;
+        mask-image: none;
+        margin: auto;
+        padding: 0;
+    }
+
     .App-content-text-carousel {
-        top: 0 !important;
-        bottom: 0 !important;
-        right: 0;
+        grid-column: 2;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40%;
-        height: 100%;
+        padding: 1em;
+        word-break: break-word;
+    }
+
+    .title-slide{
+        font-size: 2.5em;
+    }
+
+    .text-slide{
+        font-size: 1.5em;
+    }
+
+    .title-carousel {
+        font-size: 30px;
+        font-weight: 600;
     }
 
     #imagecarousel1 {
-        object-position: center -5cm;
-        object-fit: cover;
+        object-position: center;
     }
 
     #imagecarousel2 {
-        object-position: 0cm -5cm;
-        object-fit: cover;
+        object-position: center -5cm;
     }
 
     #imagecarousel3 {
-        object-position: 0 -5.3cm;
-        object-fit: cover;
+        object-position: center -6cm;
     }
 
     #imagecarousel4 {
-        object-position: 0 -4.5cm;
-        object-fit: cover;
+        object-position: center -4.5cm;
     }
 
     #imagecarousel5 {
-        object-position: 0 -6.8cm;
-        object-fit: cover;
+        object-position: center -7cm;
     }
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+        display: block;
+        color: var(--branco);
+    }
+
+    div.swiper-button-next{
+        right: 5% !important;
+    }
+
+    div.swiper-button-prev{
+        left: 5% !important;
+    }
+
 }

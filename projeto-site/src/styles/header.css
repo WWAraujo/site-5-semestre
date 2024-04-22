@@ -1,9 +1,9 @@
 .App-header {
     position: sticky;
-    top: 5px;
+    top: 0;
     background-color: var(--cor-de-fundo);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50%  30%;
     grid-template-rows: 1;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-left: 10%;
     padding: 0.5em;
 }
 
@@ -39,7 +38,6 @@
     height: 100%;
     grid-column: 2;
     grid-row: 1;
-    margin-right: 10%;
 }
 
 .logo-social-media{
@@ -110,7 +108,6 @@
     position: absolute;
     bottom: 5%;
     padding: 1em 3em;
-    
 }
 
 .container__button {
@@ -119,6 +116,7 @@
 
 .menu-extensive {
     display: none;
+    margin: 0;
 }
 
 li {
@@ -129,8 +127,8 @@ li {
     .App-header {
         padding: 0;
         margin: 0;
-        grid-template-columns: 35% 65%;
-        justify-content: space-between;
+        grid-template-columns: 30% 65%;
+        justify-content: space-around;
     }
 
     .logo__image {
@@ -153,7 +151,6 @@ li {
         width: 100%;
         height: 100%;
         padding: 0;
-        margin: 0;
     }
 
     .menu__item {
@@ -175,33 +172,32 @@ li {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .App-header {
         display: grid;
-        align-items: center;
-        justify-content: space-between;
-        grid-template-columns: 45% 55%;
+        justify-content: space-around;
+        grid-template-columns: 20% 60%;
         grid-template-rows: 1;
         height: 100%;
     }
 
     .header-logo {
-        width: 100%;
         height: 100px;
-        margin: auto;
+        margin: 0;
         padding: 0;
     }
 
     .logo__image{
-        width: 170px;
+        width: 190px;
         height: 100%;
-        padding: 0.3em;
     }
 
     .menu-extensive {
         display: flex;
+        align-items: center;
         justify-content: space-evenly;
         width: 100%;
+        height: 100%;
     }
 
     .menu__item {
