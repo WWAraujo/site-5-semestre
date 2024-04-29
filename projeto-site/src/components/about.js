@@ -1,6 +1,6 @@
 
 
-function About() {
+function About({id}) {
     const title = "Conheça a Arte Vieira";
 
     const content = "Em 2012, nascia a Arte Vieira Coquetelaria, " +
@@ -14,7 +14,7 @@ function About() {
 
 
     return (
-        <div className="container-about">
+        <div className="container-about" id={id}>
             <div class="about-introdution">
                 <div class="about-title-content">
                     <h1>{title}</h1>

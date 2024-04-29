@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+
 }
 
 .container-about{
@@ -24,8 +25,11 @@
 
 @media screen and (min-width:1025px){
     .container-about{
+        display: flex;
+        align-items: center;
         width: 100%;
         padding: 1em;
+        height: 80vh;
     }
 
     .about-introdution{

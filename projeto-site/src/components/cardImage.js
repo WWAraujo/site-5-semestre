@@ -7,9 +7,9 @@ import './../styles/cardImage.css'
  * Icone com imagem
  * TODO: Renomear card e definir o propósito
  */
-function CardImage() {
+function CardImage({id}) {
   return (
-    <div className="container-image">
+    <div className="container-image" id={id}>
       <div className="imagem-container">
         <img className="imagem-maxima" 
           src={fotoInicio} 

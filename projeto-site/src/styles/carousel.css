@@ -4,12 +4,10 @@
 }
 
 .title-slide {
-    font-family: var(--fonte-principal);
     font-size: 14px;
 }
 
 .text-slide {
-    font-family: var(--fonte-principal);
     font-size: 10px;
 }
 
@@ -20,6 +18,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    background-color: var(--cor-de-fundo-secundaria);
 }
 
 .swiper-slide {
@@ -136,10 +135,10 @@ div.swiper-pagination {
 @media screen and (min-width: 1025px) {
 
     .swiper {
-        margin: 3% 0;
         padding: 1% !important;
         width: 100%;
         height: 100%;
+        margin: 0;
     }
 
     .swiper-slide {
@@ -147,6 +146,10 @@ div.swiper-pagination {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .title-carousel {
+        font-size: 2.5em;
+        font-weight: 600;
     }
 
     .App-content-carousel {
@@ -156,17 +159,19 @@ div.swiper-pagination {
         grid-row: 1;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 100%;
-        padding: 0;
+        padding: 2em;
+        background-color: var(--branco);
     }
 
     .App-content-carousel>img {
         width: 80%;
-        height: 60vh;
+        height: 70vh;
         mask-image: none;
         margin: auto;
         padding: 0;
+        box-shadow: 0 0 1em 0.3em gray;
     }
 
     .App-content-text-carousel {
@@ -174,22 +179,20 @@ div.swiper-pagination {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 1em;
         word-break: break-word;
     }
 
     .title-slide{
+        width: 100%;
         font-size: 2.5em;
+        color: var(--cor-de-fundo);
     }
 
     .text-slide{
-        font-size: 1.5em;
-    }
-
-    .title-carousel {
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 1.25em;
+        color: var(--cor-de-fundo);
     }
 
     #imagecarousel1 {
@@ -197,19 +200,19 @@ div.swiper-pagination {
     }
 
     #imagecarousel2 {
-        object-position: center -5cm;
+        object-position: center;
     }
 
     #imagecarousel3 {
-        object-position: center -6cm;
+        object-position: center;
     }
 
     #imagecarousel4 {
-        object-position: center -4.5cm;
+        object-position: center ;
     }
 
     #imagecarousel5 {
-        object-position: center -7cm;
+        object-position: center -0.8cm;
     }
 
     div.swiper-button-next,
@@ -224,6 +227,18 @@ div.swiper-pagination {
 
     div.swiper-button-prev{
         left: 5% !important;
+    }
+
+    .content-vejamais{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .content-vejamais li{
+        list-style-type: circle;
+        margin: 1em 0;
     }
 
 }
