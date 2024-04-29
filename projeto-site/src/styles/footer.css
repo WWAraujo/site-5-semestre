@@ -1,8 +1,81 @@
 .App-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
-    background-color: var(--cor-de-fundo);
+    height: 100%;
+    background-color: var(--cor-de-fundo-secundaria);
 }
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.contact-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-image-contact {
+    width: 50%;
+}
+
+.navigation-menu{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu .menu__item {
+    padding: 10% 0;
+}
+
+.contacts {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts p > img{
+    margin-right: 0.6em;
+}
+
+.contacts p {
+    font-size: 15px;
+  }
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+    padding-left: 1%;
+  }
+
+.social-media-icons p{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 2em;
+}
+
+.social-media-contact{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.logo-youtube{
+  width: 30px;
+}
+
