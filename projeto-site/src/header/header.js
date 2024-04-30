@@ -22,6 +22,20 @@ function Header() {
     }
   };
 
+  let lastScrollTop = 0;
+
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    // Rolando para baixo
+    document.querySelector(".App-header").style.top = "-90px"; // Ajuste o valor conforme necessário
+  } else {
+    // Rolando para cima
+    document.querySelector(".App-header").style.top = "0";
+  }
+  lastScrollTop = currentScroll;
+});
+
   return (
     <header className="App-header">
       <div className="header-logo">
@@ -55,7 +69,7 @@ function Header() {
           </li>
           <p>Nossas redes sociais</p>
         </ul>
-        <nav>
+        <nav className="navigation">
           <ul className="menu-extensive">
             <li className="menu__item"><a href="#cardImage" className="menu__link" onClick={(e) => handleNavItemClick('cardImage', e)}>Home</a></li>
             <li className="menu__item"><a href="#about" className="menu__link" onClick={(e) => handleNavItemClick('about', e)}>Quem Somos</a></li>

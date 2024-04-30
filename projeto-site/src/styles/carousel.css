@@ -135,7 +135,7 @@ div.swiper-pagination {
 @media screen and (min-width: 1025px) {
 
     .swiper {
-        padding: 1% !important;
+        padding: 0 !important;
         width: 100%;
         height: 100%;
         margin: 0;
@@ -146,28 +146,36 @@ div.swiper-pagination {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
+
     .title-carousel {
+        text-align: center;
+        margin: 1% auto 2%;
         font-size: 2.5em;
         font-weight: 600;
+        width: 100%;
+        text-transform: uppercase;
     }
 
     .App-content-carousel {
-        margin: auto;
         display: grid;
         grid-template-columns: 60% 40%;
         grid-row: 1;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: 100%;
-        padding: 2em;
+        width: 80%;
+        height: 70vh;
+        padding: 0;
         background-color: var(--branco);
+        margin: auto;
     }
 
     .App-content-carousel>img {
-        width: 80%;
-        height: 70vh;
+        width: 450px;
+        height: 450px;
         mask-image: none;
         margin: auto;
         padding: 0;
@@ -184,13 +192,13 @@ div.swiper-pagination {
         word-break: break-word;
     }
 
-    .title-slide{
+    .title-slide {
         width: 100%;
         font-size: 2.5em;
         color: var(--cor-de-fundo);
     }
 
-    .text-slide{
+    .text-slide {
         font-size: 1.25em;
         color: var(--cor-de-fundo);
     }
@@ -208,11 +216,11 @@ div.swiper-pagination {
     }
 
     #imagecarousel4 {
-        object-position: center ;
+        object-position: center;
     }
 
     #imagecarousel5 {
-        object-position: center -0.8cm;
+        object-position: center;
     }
 
     div.swiper-button-next,
@@ -221,24 +229,23 @@ div.swiper-pagination {
         color: var(--branco);
     }
 
-    div.swiper-button-next{
-        right: 5% !important;
+    div.swiper-button-next {
+        right: 6% !important;
     }
 
-    div.swiper-button-prev{
-        left: 5% !important;
+    div.swiper-button-prev {
+        left: 6% !important;
     }
 
-    .content-vejamais{
+    .content-vejamais {
         width: 100%;
         height: 50%;
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
-    .content-vejamais li{
+    .content-vejamais li {
         list-style-type: circle;
         margin: 1em 0;
     }
-
 }
