@@ -13,6 +13,7 @@ import Feedback from './components/feedback';
 import Footer from './footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css/bundle';
+import Contact from './components/Contact/contact';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <About id="about" />
         <Carousel id="carousel" />
         <Team />
+        <Contact />
         <Feedback />
         <Footer id="contact"/>
         
