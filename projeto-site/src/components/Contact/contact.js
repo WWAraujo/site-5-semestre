@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SendMessage from '../../SendMessage';
+import SendMessage from '../../sendMessage';
 
 // import IContact from '../interfaces/IContact.js';
 
@@ -74,8 +74,9 @@ function Contact() {
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Quero fazer um orçamento para minha festa de 15 anos" name="message" value={formData.message} onChange={handleChange}></textarea>
                 </div>
                 <div className='text-center mb-3'>
-                    <a href={`https://web.whatsapp.com/send?phone=${encodeURIComponent(formData.phone)}&text=${encodeURIComponent(formData.message)}`} className="btn btn-primary">Enviar mensagem</a>
-                    <button href="https://web.whatsapp.com/send?phone=5511999999999&text=Olá%20mundo!" type="submit" className="btn btn-primary">Enviar</button>
+                    <a href={`https://web.whatsapp.com/send?phone=${encodeURIComponent(formData.phone)}&text=${encodeURIComponent('Olá sou o ' + formData.name + ' Meu email: ' + formData.email + ' Assunto: ' + formData.subject + ' ' + formData.message)}`} className="btn btn-primary">Enviar mensagem</a>
+                    
+                    
                 </div>
             </form>
         </div>
