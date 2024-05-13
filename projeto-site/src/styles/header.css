@@ -128,8 +128,9 @@ li {
     .App-header {
         padding: 0;
         margin: 0;
-        grid-template-columns: 30% 65%;
+        grid-template-columns: 30% 70%;
         justify-content: space-around;
+        
     }
 
     .logo__image {
@@ -143,7 +144,7 @@ li {
         height: 100%;
         margin: 0;
         padding: 0;
-        margin-left: 10%;
+        margin-left: 0;
     }
 
     .menu-extensive {
@@ -157,7 +158,10 @@ li {
     .menu__item {
         display: flex;
         align-items: center;
+    }
 
+    .navigation {
+        width: 90%;
     }
 
     .menu__link {
@@ -165,6 +169,7 @@ li {
         text-decoration: none;
         font-size: 12px;
         text-transform: uppercase;
+        font-weight: 700;
     }
 
     .burguer-menu__header {

@@ -1,0 +1,96 @@
+.container-buttonmodal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-openmodal {
+    display: grid;
+    place-content: center;
+    background-color: transparent;
+    max-height: 2%;
+    color: var(--branco);
+    border-radius: 3rem;
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin: max(1rem, 3vw);
+    border: 0.35rem solid;
+    padding: 1.5vw 4vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.button-openmodal:hover {
+    color: var(--branco);
+    background: transparent;
+}
+
+.tracking-out-expand {
+    animation: tracking-out-expand .5s cubic-bezier(.20, .40, .40, .50) both;
+}
+
+.button-openmodal.tracking-out-expand:focus {
+    outline: none;
+}
+
+.tracking-out-expand-reverse {
+    animation: tracking-out-expand-reverse .3s cubic-bezier(.25, .46, .45, .50) reverse both;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+
+
+@keyframes tracking-out-expand {
+    0% {
+        opacity: 1
+    }
+
+    60% {
+        opacity: .8
+    }
+
+    100% {
+        letter-spacing: .8em;
+        opacity: 0
+    }
+}
+
+@keyframes tracking-out-expand-reverse {
+    0% {
+        opacity: 1
+    }
+
+    60% {
+        opacity: .8
+    }
+
+    100% {
+        letter-spacing: .8em;
+        opacity: 0
+    }
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}

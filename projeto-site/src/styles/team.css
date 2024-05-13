@@ -6,6 +6,7 @@
     height: 80vh;
     background-color: var(--cor-de-fundo);
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .team {
@@ -28,6 +29,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.btn-orcamento{
+    width: 50%;
+    max-height:15% ;
+    padding: 1em;
+    border-radius: 50px;
+    background-color: var(--branco);
+    color: var(--cor-de-fundo);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn-orcamento:hover{
+    box-shadow: 0 0 10px 1px var(--branco);
+    font-size: 1.55em;
+    transition: 0.3s;
+    border: none;
 }
 
 @media screen and (max-width: 767px) {

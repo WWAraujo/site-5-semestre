@@ -48,19 +48,19 @@ window.addEventListener("scroll", function() {
         </label>
         <ul className="menu-list">
           <li className="menu-list-item">
-            <a href="" className="menu-list-link">Home</a>
+            <a href="#cardImage" className="menu-list-link">Home</a>
           </li>
           <li className="menu-list-item">
-            <a href="#" className="menu-list-link">Quem Somos</a>
+            <a href="#about" className="menu-list-link">Quem Somos</a>
           </li>
           <li className="menu-list-item">
-            <a href="#" className="menu-list-link">Eventos</a>
+            <a href="#carousel" className="menu-list-link">Eventos</a>
           </li>
           <li className="menu-list-item">
             <a href="#" className="menu-list-link">Solicitar Orçamento</a>
           </li>
           <li className="menu-list-item">
-            <a href="#" className="menu-list-link">Contato</a>
+            <a href="#contato" className="menu-list-link" onClick={(e) => handleNavItemClick('contact', e)}>Contato</a>
           </li>
           <li className="social-media">
             <a href="https://www.instagram.com/artevieira/" className="icon-instagram"><img className="logo-social-media" src={instagram} alt="instagram" /></a>

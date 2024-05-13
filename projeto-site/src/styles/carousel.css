@@ -162,7 +162,7 @@ div.swiper-pagination {
 
     .App-content-carousel {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 55% 45%;
         grid-row: 1;
         justify-content: center;
         align-items: center;
@@ -188,7 +188,7 @@ div.swiper-pagination {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        padding: 1em;
+        padding-right: 4em;
         word-break: break-word;
     }
 

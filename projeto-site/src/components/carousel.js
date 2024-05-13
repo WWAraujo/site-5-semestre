@@ -13,7 +13,7 @@ function Carousel({id}) {
             direction: 'horizontal',
             autoheight: true,
             loop: true,
-            speed: 1000,
+            speed: 1500,
             parallax: true,
             autoplay: {
                 delay: 3000,

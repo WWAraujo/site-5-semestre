@@ -41,13 +41,6 @@ function Footer({id}) {
             </ul>
           </div>
           <div className="contacts">
-            <div className="email-address-numbers">
-              <p className="email"><img src={email} alt="imagem de um icone de email" />contato@artevieira.com</p>
-              <p className="address"><img src={mapa} alt="imagem de um icone de marcador de mapa" />Alameda Afonso Bocchiglieri, 327
-                Vila Arriete, São Paulo – SP</p>
-              <p><img src={telefone} alt="imagem de um telefone" />(11) 3294-6448</p>
-              <p><img src={whatsapp} alt="imagem de um telefone" />(11) 95968-0087</p>
-            </div>
             <ul className="social-media-icons">
               <p>Redes Sociais</p>
               <li class="social-media-contact">
@@ -55,8 +48,14 @@ function Footer({id}) {
                 <a href="https://www.facebook.com/ArteVieiraEventos" class="icon-facebook"><img className="social-media-logo" src={facebook} alt="facebook" /></a>
                 <a href="https://www.youtube.com/@Artevieiracoquetelaria" class="icon-youtube"><img className="social-media-logo logo-youtube" src={youtube} alt="youtube" /></a>
               </li>
-
             </ul>
+            <div className="email-address-numbers">
+              <p><img src={whatsapp} alt="imagem de um telefone" />(11) 95968-0087</p>
+              <p><img src={telefone} alt="imagem de um telefone" />(11) 3294-6448</p>
+              <p className="email"><img src={email} alt="imagem de um icone de email" />contato@artevieira.com</p>
+              <p className="address"><img src={mapa} alt="imagem de um icone de marcador de mapa" />Alameda Afonso Bocchiglieri, 327
+                Vila Arriete, São Paulo – SP</p>
+            </div>
           </div>
         </div>
         <p className="footer__text text-center">COPYRIGHT © 2024 | ARTE VIEIRA EVENTOS | TODOS OS DIREITOS RESERVADOS.</p>

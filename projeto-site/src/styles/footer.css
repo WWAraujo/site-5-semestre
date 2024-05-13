@@ -1,4 +1,116 @@
 .App-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-de-fundo-secundaria);
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.contact-logo {
+  display: none;
+}
+
+.navigation-menu {
+  display: none;
+}
+
+.email-address-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.social-media-icons {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: space-between;
+}
+
+.social-media-contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.social-media-icons p {
+  text-align: center;
+}
+
+.contacts p {
+  font-size: 0.7em;
+}
+
+.contacts p>img {
+  width: 14px;
+}
+
+.App-footer>p {
+  font-size: 0.5em;
+  margin-bottom: 5em;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .contact-logo {
+    display: block;
+    width: 30%;
+  }
+
+  .logo-image-contact {
+    width: 100%;
+  }
+
+  .App-footer>p {
+    font-size: 1em;
+    margin: 0;
+    padding: 2em 0;
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
+
+  .contacts p {
+    font-size: 0.9em;
+  }
+  
+  .contacts p>img {
+    width: 20px;
+    margin-right: 0.8em;
+  }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+
+  .App-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,38 +118,39 @@
     width: 100%;
     height: 100%;
     background-color: var(--cor-de-fundo-secundaria);
-}
+    padding: auto;
+  }
 
-.contact-content {
+  .contact-content {
     display: grid;
     grid-template-columns: 30% 35% 35%;
     justify-content: space-between;
     padding: 2em;
-}
+  }
 
-.contact-logo {
+  .contact-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 1;
     width: 100%;
     height: 100%;
-}
+  }
 
-.logo-image-contact {
+  .logo-image-contact {
     width: 50%;
-}
+  }
 
-.navigation-menu{
+  .navigation-menu {
     display: flex;
     align-items: center;
-}
+  }
 
-.navigation-menu .menu__item {
+  .navigation-menu .menu__item {
     padding: 10% 0;
-}
+  }
 
-.contacts {
+  .contacts {
     grid-column: 3;
     display: flex;
     flex-direction: column;
@@ -45,37 +158,52 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-}
+  }
 
-.contacts p > img{
+  .contacts p>img {
     margin-right: 0.6em;
-}
+  }
 
-.contacts p {
+  .contacts p {
     font-size: 15px;
   }
 
-.social-media-icons {
+  .social-media-icons {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-top: 10%;
-    padding-left: 1%;
+
   }
 
-.social-media-icons p{
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 2em;
-}
+  .social-media-icons p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
 
-.social-media-contact{
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-}
+  .social-media-contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-bottom: 3em;
+  }
 
-.logo-youtube{
-  width: 30px;
-}
+  .logo-youtube {
+    width: 30px;
+  }
 
+  .App-footer>p {
+    font-size: 1em;
+    margin: 0;
+    padding: 2em 0;
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
+
+  .contacts p>img {
+    width: 22px;
+  }
+
+
+}

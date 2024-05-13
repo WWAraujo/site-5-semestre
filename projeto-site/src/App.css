@@ -5,12 +5,19 @@
 @import url("styles/footer.css");
 @import url("styles/main-image.css");
 @import url("styles/feedbacks.css");
+@import url("styles/contact.css");
 
 :root{
   --fonte-principal: "Poppins";
   --cor-de-fundo: #021420;
   --branco:#ffffff;
   --cor-de-fundo-secundaria: #0C1A38;
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: 	#FFD700;
+  --c2: rgba(168, 239, 255, 0.1);
 }
 
 .App{
