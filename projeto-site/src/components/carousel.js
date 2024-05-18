@@ -3,11 +3,11 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import Confraternização from '../imagem/Confraternização.jpeg';
 import Casamento from '../imagem/Casamento.jpeg';
-import Formatura from '../imagem/Formatura.jpeg';
+import FestaJudaica from '../imagem/Festa Judaica.jpeg';
 import Aniversario from '../imagem/Aniversario.jpeg';
 import VejaMais from '../imagem/VejaMais.png';
 
-function Carousel({id}) {
+function Carousel({ id }) {
     useEffect(() => {
         new Swiper('.swiper', {
             direction: 'horizontal',
@@ -15,10 +15,10 @@ function Carousel({id}) {
             loop: true,
             speed: 1500,
             parallax: true,
-            autoplay: {
-                delay: 3000,
-                pauseOnMouseEnter: true,
-            },
+            // autoplay: {
+            //     delay: 3000,
+            //     pauseOnMouseEnter: true,
+            // },
             effect: 'coverflow',
             coverflowEffect: {
                 depth: 0,
@@ -71,10 +71,10 @@ function Carousel({id}) {
                 </div>
                 <div className="swiper-slide container-slide">
                     <div className="App-content-carousel">
-                        <img className="App-image" src={Formatura} alt="Imagem 3 Carossel" id="imagecarousel3" />
+                        <img className="App-image" src={FestaJudaica} alt="Imagem 3 Carossel" id="imagecarousel3" />
                         <div className="App-content-text-carousel">
-                            <h1 className="title-slide" data-swiper-parallax="-1000">Formatura</h1>
-                            <p className="text-slide" data-swiper-parallax="-500">Os chapéus voam, os corações batem forte - é hora de celebrar! Este é o momento em que as lágrimas de esforço se transformam em sorrisos de conquista. E nós, da <strong>Arte Vieira</strong>, estamos aqui para tornar essa celebração ainda mais memorável! Deixe-nos adicionar um toque de elegância e sabor à sua festa de formatura. Cada gole é mais do que uma bebida; é uma experiência que marca o início de uma nova fase emocionante.</p>
+                            <h1 className="title-slide" data-swiper-parallax="-1000">Festas Judaicas</h1>
+                            <p className="text-slide" data-swiper-parallax="-500">Celebre a alegria e a tradição em cada brinde, seja no Bar Mitzvah, no casamento ou em qualquer outra festividade judaica! Que nossos coquetéis elevem essas ocasiões especiais, trazendo sabores únicos que honram nossa herança. Em cada celebração, festeje a união, a cultura e os momentos inesquecíveis compartilhados. L'chaim à felicidade e à continuidade de nossas tradições!</p>
                         </div>
                     </div>
                 </div>

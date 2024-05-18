@@ -1,43 +1,38 @@
-.container-about{
+.container-about {
     margin: 0;
-    padding: 0 2em;
     width: 100%;
+    padding: 0 2em;
 }
 
-.about-title-content h1{
+.about-title-content h1 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.about-title-content p{
+.about-title-content p {
     font-weight: 300;
     text-align: justify;
 }
 
-.about-introdution{
+.about-introdution {
     margin: 1%;
 }
 
-@media screen and (min-width:1025px){
-    .container-about{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding:  0 10%;
+@media screen and (min-width:1025px) {
+    .container-about {
         height: 80vh;
+        display: flex;
+        padding: 0 10%;
+        align-items: center;
     }
 
-    .about-introdution{
+    .about-introdution {
         width: 50%;
     }
 
-    .about-title-content h1{
-        font-size: 20px;
-    }
-    
-    .about-title-content p{
+    .about-title-content p {
         font-size: 16px;
-        text-align: justify;
         line-height: 1.7em;
+        text-align: justify;
     }
 }

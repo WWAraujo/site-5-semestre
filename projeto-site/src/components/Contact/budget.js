@@ -52,13 +52,13 @@ function ModalFunction(props) {
     return (
         <Modal
             {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
             centered
+            size='xl'
+            aria-labelledby="example-custom-modal-styling-title"
         >
-            <Modal.Header closeButton>
+            <Modal.Header closeButton className="modal-header-center">
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Cabeçalho
+                    Eventos inesquecíveis começam com drinks incríveis. Solicite seu pré-orçamento aqui.
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -103,21 +103,18 @@ function ModalFunction(props) {
     )
 }
 
-function Contact() {
+function Contact({ id }) {
     const [modalShow, setModalShow] = React.useState(false);
     const [animationClass, setAnimationClass] = useState('');
 
     const handleOpenModal = () => {
-        setAnimationClass('tracking-out-expand');
         setTimeout(() => {
-
             setModalShow(true);
-        }, 500);
+        }, 100);
     }
 
     const handleCloseModal = () => {
         setTimeout(() => {
-            setAnimationClass('tracking-out-expand-reverse');
             setModalShow(false);
             setTimeout(() => {
                 setAnimationClass('');
@@ -126,7 +123,12 @@ function Contact() {
     }
 
     return (
-        <div className="container-buttonmodal">
+        <section className="container-budget" id={id}>
+            <div className="budget-text">
+                <p>
+                    "Leve seu evento a outro nível com nossos drinks criativos, técnicas de mixologia sofisticadas e apresentações impressionantes. Solicite um pré-orçamento clicando no botão abaixo e saiba mais sobre nossos serviços de coquetelaria para festas e eventos."
+                </p>
+            </div>
             <Button
                 className={`button-openmodal ${animationClass}`}
                 onClick={handleOpenModal}
@@ -137,9 +139,9 @@ function Contact() {
                 show={modalShow}
                 onHide={handleCloseModal}
                 animation={true}
-                
+
             />
-        </div>
+        </section>
     );
 }
 

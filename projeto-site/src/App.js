@@ -11,7 +11,7 @@ import Carousel from './components/carousel';
 import Team from './components/team';
 import Feedback from './components/feedback';
 import Footer from './footer/footer';
-import Contact from './components/Contact/contact'
+import Contact from './components/Contact/budget'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css/bundle';
 
@@ -25,8 +25,9 @@ function App() {
         <CardImage id="cardImage"/>
         <About id="about" />
         <Carousel id="carousel" />
+        <Contact id="budget"/>
         <Team />
-        <Contact/>
+        
         <Feedback />
         <Footer id="contact"/>
         
