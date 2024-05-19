@@ -3,25 +3,28 @@
 @import url("styles/about.css");
 @import url("styles/team.css");
 @import url("styles/footer.css");
-@import url("styles/main-image.css");
-@import url("styles/contato.css");
+@import url("styles/feedbacks.css");
+@import url("styles/contact.css");
 
-:root{
-  --fonte-principal: "Poppins";
+:root {
+  --d: 1500ms;
+  --angle: 90deg;
+  --c1: #FFD700;
+  --branco: #ffffff;
+  --border-blue: #0ca5b0;
+  --azul-escuro: #0C1A38;
   --cor-de-fundo: #021420;
-  --branco:#ffffff;
+  --c2: rgba(168, 239, 255, 0.1);
+  --cor-de-fundo-secundaria: #0C1A38;
+  --fonte-principal: "Poppins", sans-serif;
 }
 
-.App{
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
+
+.App {
   display: flex;
+  min-width: 250px;
+  color: var(--branco);
   flex-direction: column;
-  min-width: 250px; 
   font: 14px var(--fonte-principal);
+  background-color: var(--cor-de-fundo);
 }
-
-
-
-
- 

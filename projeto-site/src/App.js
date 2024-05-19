@@ -7,29 +7,29 @@ import CardImage from './components/cardImage'
 import IconWhatsapp from './components/whatsapp';
 import About from './components/about';
 import Carousel from './components/carousel';
-import Team from './components/team';
-import Contato from './components/contato';
+// import Team from './components/team';
+import Feedback from './components/feedback';
 import Footer from './footer/footer';
+import Contact from './components/Contact/budget'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css/bundle';
 
-
 function App() {
-  // const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
     <div className="App">
-      
+
       <div>
-        <Header />
-
-        <CardImage />
-        <About />
-        <Carousel />
-        <Team/>
-        <Contato/>
-
-        <Footer />
+        <Header/>
+        <CardImage id="cardImage"/>
+        <About id="about" />
+        <Carousel id="carousel" />
+        <Contact id="budget"/>
+        {/* <Team /> */}
+        
+        <Feedback id="feedback"/>
+        <Footer id="contact"/>
+        
       </div>
 
       <IconWhatsapp />

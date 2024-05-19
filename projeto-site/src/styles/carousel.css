@@ -1,39 +1,35 @@
-.title-carousel {
-    text-align: center;
-    font-size: 18px;
-}
-
-.title-slide {
-    font-family: var(--fonte-principal);
-    font-size: 14px;
-}
-
-.text-slide {
-    font-family: var(--fonte-principal);
-    font-size: 10px;
-}
-
-.swiper {
+.swiper-container1 {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    background-color: var(--cor-de-fundo-secundaria);
 }
 
-.swiper-slide {
-    padding: 3%;
+.title-carousel {
+    width: 100%;
+    font-weight: 600;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 3% auto 3%;
+    text-transform: uppercase;
+}
+
+.swiper-slide1 {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide img {
-    grid-row: 1;
+.swiper-slide1 img {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    margin: auto;
+    max-width: 450px;
+    max-height: 450px;
     object-fit: cover;
     object-position: center;
+    border: 0.1rem solid #fff;
     mask-image: linear-gradient(to top, transparent 20%, gray 50%);
 }
 
@@ -42,14 +38,25 @@
 }
 
 .App-content-text-carousel {
-    position: absolute;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title-slide {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.text-slide {
+    width: 90%;
+    font-size: 2.3vw;
 }
 
 div.swiper-button-next,
@@ -61,155 +68,85 @@ div.swiper-pagination {
     position: initial;
 }
 
-.swiper-pagination-bullet-active {
-    background-color: var(--branco) !important;
-}
-
-.swiper-pagination-bullet {
-    background: var(--branco) !important;
-}
-
-#imagecarousel1 {
-    object-position: center -2em;
-}
-
-#imagecarousel2 {
-    object-position: center 80%;
-}
-
-#imagecarousel3 {
-    object-position: center 70%;
-}
-
-#imagecarousel4 {
-    object-position: center 63%;
-
-}
-
-#imagecarousel5 {
-    object-position: center 100%;
+.content-vejamais li {
+    margin: 1em 0;
+    list-style-type: circle;
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px) {
 
-    div.swiper-button-next,
-    div.swiper-button-prev {
-        display: none;
+    .swiper-slide1 img {
+        max-width: 700px;
+        max-height: 700px;
     }
 
-    .App-content-carousel {
-        grid-template-columns: 50% 50%;
-
+    .text-slide {
+        font-size: 2vw;
     }
-
-    .swiper-slide img {
-        width: 100%;
-        height: 400px;
-
-    }
-
-    #imagecarousel1 {
-        object-fit: cover;
-        object-position: center;
-    }
-
-    #imagecarousel2 {
-        object-position: center 90%;
-        object-fit: cover;
-    }
-
-    #imagecarousel3 {
-        object-position: center 80%;
-        object-fit: cover;
-    }
-
-    #imagecarousel4 {
-        object-position: 0em -10em;
-    }
-
-    #imagecarousel5 {
-        object-position: center 100%;
-    }
-
 }
 
 @media screen and (min-width: 1025px) {
-
-    .swiper {
-        margin: 3% 0;
-        padding: 1% !important;
-        width: 100%;
-        height: 100%;
+    .title-carousel {
+        font-size: 2.5vw;
+        margin: 2% auto 2%;
     }
 
-    .swiper-slide {
+    .swiper-slide1 {
+        margin: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
+        margin-bottom: 2%;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
     }
 
     .App-content-carousel {
-        margin: auto;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-row: 1;
-        justify-content: center;
-        align-items: center;
         width: 80%;
-        height: 100%;
-        padding: 0;
+        height: 70%;
+        grid-row: 1;
+        margin: auto;
+        padding: 2em;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 55% 40%;
+        justify-content: space-between;
+        background-color: var(--branco);
     }
 
     .App-content-carousel>img {
-        width: 80%;
-        height: 60vh;
-        mask-image: none;
-        margin: auto;
         padding: 0;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+        grid-column: 1;
+        mask-image: none;
+        max-width: 450px;
+        max-height: 450px;
+        object-position: center;
+        box-shadow: 0 0 1em 0.3em gray;
     }
 
     .App-content-text-carousel {
+        width: 80%;
+        display: flex;
         grid-column: 2;
         position: relative;
-        display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 1em;
         word-break: break-word;
+        justify-content: space-evenly;
     }
 
-    .title-slide{
-        font-size: 2.5em;
+    .title-slide {
+        text-align: start;
+        font-size: 2.1vw;
+        color: var(--cor-de-fundo);
     }
 
-    .text-slide{
-        font-size: 1.5em;
-    }
-
-    .title-carousel {
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    #imagecarousel1 {
-        object-position: center;
-    }
-
-    #imagecarousel2 {
-        object-position: center -5cm;
-    }
-
-    #imagecarousel3 {
-        object-position: center -6cm;
-    }
-
-    #imagecarousel4 {
-        object-position: center -4.5cm;
-    }
-
-    #imagecarousel5 {
-        object-position: center -7cm;
+    .text-slide {
+        font-size: 1.25em;
+        color: var(--cor-de-fundo);
     }
 
     div.swiper-button-next,
@@ -218,12 +155,22 @@ div.swiper-pagination {
         color: var(--branco);
     }
 
-    div.swiper-button-next{
-        right: 5% !important;
+    div.swiper-button-next {
+        right: 6% !important;
     }
 
-    div.swiper-button-prev{
-        left: 5% !important;
+    div.swiper-button-prev {
+        left: 6% !important;
     }
 
+    .content-vejamais {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagecarousel1 {
+        object-position: 10%;
+    }
 }

@@ -1,8 +1,172 @@
 .App-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-de-fundo);
+}
+
+.contact-content {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-logo,
+.navigation-menu {
+  display: none;
+}
+
+.email-address-numbers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media-icons {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: auto auto 1em;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.social-media-contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.App-footer>p {
+  margin: 0;
+  width: 100%;
+  padding: 1.4em;
+  font-size: 2vw;
+  border-top: 1px solid #fff;
+}
+
+@media screen and (min-width:768px) {
+
+  .App-footer>p {
+    margin: 0;
+    width: 100%;
+    padding: 2em 0;
+    font-size: 1em;
+    border-top: 1px solid #fff;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 40% 60%;
+  }
+
+  .contact-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-column: 1;
+    grid-row: 1/ span 2;
+  }
+
+  .logo-image-contact {
+    width: 100%;
+    margin: auto;
+  }
+
+  .social-media-contacts {
     display: flex;
     justify-content: center;
-    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .App-footer {
     width: 100%;
-    height: 80px;
-    background-color: var(--cor-de-fundo);
+    height: 100%;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-content {
+    padding: 1em;
+    justify-content: space-between;
+    grid-template-columns: 30% 20% 15% 35%;
+  }
+
+  .contact-logo {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-image-contact {
+    width: 70%;
+  }
+
+  .navigation-menu {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .menu__item-footer a {
+    padding: 5% 0;
+    color: #fff;
+    font-size: 0.9vw;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .social-media-contacts {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social-media-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 3em 0;
+    flex-direction: column;
+  }
+
+  .social-media-icons p {
+    font-size: 1vw;
+    font-weight: 700;
+  }
+
+  .social-media-contact {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-evenly;
+  }
+
+  .logo-youtube {
+    width: 30px;
+  }
+
+  .App-footer>p {
+    margin: 0;
+    width: 100%;
+    padding: 1.4em;
+    font-size: 0.8vw;
+    border-top: 1px solid #fff;
+  }
+
 }
