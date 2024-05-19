@@ -9,16 +9,16 @@ import VejaMais from '../imagem/VejaMais.png';
 
 function Carousel({ id }) {
     useEffect(() => {
-        new Swiper('.swiper', {
+        new Swiper('.swiper-container1', {
             direction: 'horizontal',
             autoheight: true,
             loop: true,
             speed: 1500,
             parallax: true,
-            // autoplay: {
-            //     delay: 3000,
-            //     pauseOnMouseEnter: true,
-            // },
+            autoplay: {
+                delay: 3000,
+                pauseOnMouseEnter: true,
+            },
             effect: 'coverflow',
             coverflowEffect: {
                 depth: 0,
@@ -45,13 +45,14 @@ function Carousel({ id }) {
             },
         });
     }, []);
+    
 
     return (
 
-        <section className="swiper" id={id}>
+        <section className="swiper swiper-container1" id={id}>
             <h1 className="title-carousel">Eventos</h1>
             <div className="swiper-wrapper">
-                <div className="swiper-slide container-slide">
+                <div className="swiper-slide swiper-slide1">
                     <div className="App-content-carousel">
                         <img className="App-image" src={Confraternização} alt="Imagem 1 Carossel" id="imagecarousel1" />
                         <div className="App-content-text-carousel">
@@ -60,7 +61,7 @@ function Carousel({ id }) {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide container-slide">
+                <div className="swiper-slide swiper-slide1">
                     <div className="App-content-carousel">
                         <img className="App-image" src={Casamento} alt="Imagem 2 Carossel" id="imagecarousel2" />
                         <div className="App-content-text-carousel">
@@ -69,7 +70,7 @@ function Carousel({ id }) {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide container-slide">
+                <div className="swiper-slide swiper-slide1">
                     <div className="App-content-carousel">
                         <img className="App-image" src={FestaJudaica} alt="Imagem 3 Carossel" id="imagecarousel3" />
                         <div className="App-content-text-carousel">
@@ -78,7 +79,7 @@ function Carousel({ id }) {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide container-slide">
+                <div className="swiper-slide swiper-slide1">
                     <div className="App-content-carousel">
                         <img className="App-image" src={Aniversario} alt="Imagem 4 Carossel" id="imagecarousel4" />
                         <div className="App-content-text-carousel">
@@ -87,7 +88,7 @@ function Carousel({ id }) {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide container-slide">
+                <div className="swiper-slide swiper-slide1">
                     <div className="App-content-carousel front-card">
                         <img className="App-image" src={VejaMais} alt="Imagem 5 Carossel" id="imagecarousel5" />
                         <div className="App-content-text-carousel container-vejamais">
