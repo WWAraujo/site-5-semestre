@@ -31,7 +31,7 @@ function Header() {
       </div>
       <div className="container-header">
         <input type="checkbox" id="menu" className="container__button" />
-        <label for="menu">
+        <label htmlfor="menu">
           <span className="burguer-menu__header container__image"></span>
         </label>
         <ul className="menu-list">

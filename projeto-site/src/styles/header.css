@@ -17,8 +17,10 @@
 .logo__image {
     grid-row: 1;
     width: 100px;
-    height: 50px;
+    max-width: 100px;
+    height: auto;
     grid-column: 1;
+    object-fit: contain;
     object-position: center;
 }
 

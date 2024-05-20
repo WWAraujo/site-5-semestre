@@ -15,8 +15,8 @@ function About({id}) {
 
     return (
         <div className="container-about" id={id}>
-            <div class="about-introdution">
-                <div class="about-title-content">
+            <div className="about-introdution">
+                <div className="about-title-content">
                     <h1>{title}</h1>
                     <p>{content}</p>
                 </div>
