@@ -22,8 +22,7 @@ function About({id}) {
                 </div>
             </div>
         </div>
-    )
-
+    ) 
 }
 
 export default About;
