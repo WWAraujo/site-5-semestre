@@ -29,8 +29,8 @@ function Footer({ id }) {
             </ul>
           </div>
           <div className="social-media-contacts">
-            <p>Siga nossas Redes Sociais</p>
             <ul className="social-media-icons">
+              <p>Siga nossas Redes Sociais</p>
               <li class="social-media-contact">
                 <a href="https://www.instagram.com/artevieira/" class="icon-instagram"><img className="social-media-logo" src={instagram} alt="instagram" /></a>
                 <a href="https://www.facebook.com/ArteVieiraEventos" class="icon-facebook"><img className="social-media-logo" src={facebook} alt="facebook" /></a>
