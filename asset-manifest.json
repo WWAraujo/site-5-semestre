@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/site-5-semestre/static/css/main.ab85fec3.css",
-    "main.js": "/site-5-semestre/static/js/main.0398964f.js",
+    "main.css": "/site-5-semestre/static/css/main.b4ef2188.css",
+    "main.js": "/site-5-semestre/static/js/main.8f31bd74.js",
     "static/js/453.fb826adb.chunk.js": "/site-5-semestre/static/js/453.fb826adb.chunk.js",
     "static/media/001.JPG": "/site-5-semestre/static/media/001.e5df4c7c6d8e1a2eca22.JPG",
-    "static/media/Img 05 Carrossel.jpeg": "/site-5-semestre/static/media/Img 05 Carrossel.cfb0d26edfcf85fff10a.jpeg",
-    "static/media/Img 02 Carrossel.jpeg": "/site-5-semestre/static/media/Img 02 Carrossel.41a83bcbb97bb9cfd6a0.jpeg",
-    "static/media/Img 04 Carrossel.jpeg": "/site-5-semestre/static/media/Img 04 Carrossel.334dc4937f585d4bad15.jpeg",
-    "static/media/Img 01 Carrossel.jpeg": "/site-5-semestre/static/media/Img 01 Carrossel.d509c3f85931963a2f6d.jpeg",
+    "static/media/VejaMais.png": "/site-5-semestre/static/media/VejaMais.a68ff42e7fa1f877cf14.png",
+    "static/media/Confraternização.jpeg": "/site-5-semestre/static/media/Confraternização.a806e9209f7ffb138bc5.jpeg",
+    "static/media/Festa Judaica.jpeg": "/site-5-semestre/static/media/Festa Judaica.554f186520baf5877495.jpeg",
+    "static/media/Aniversario.jpeg": "/site-5-semestre/static/media/Aniversario.6f1556366efa1fdb279c.jpeg",
+    "static/media/Casamento.jpeg": "/site-5-semestre/static/media/Casamento.94f8edc3216cc5af6417.jpeg",
     "static/media/logo-escuro.png": "/site-5-semestre/static/media/logo-escuro.c46b79423a66cfbabdc7.png",
-    "static/media/Img 03 Carrossel.jpeg": "/site-5-semestre/static/media/Img 03 Carrossel.b86917b15bcec0f41952.jpeg",
+    "static/media/backgroundimage.png": "/site-5-semestre/static/media/backgroundimage.530b9603de388177900c.png",
     "index.html": "/site-5-semestre/index.html",
-    "main.ab85fec3.css.map": "/site-5-semestre/static/css/main.ab85fec3.css.map",
-    "main.0398964f.js.map": "/site-5-semestre/static/js/main.0398964f.js.map",
+    "main.b4ef2188.css.map": "/site-5-semestre/static/css/main.b4ef2188.css.map",
+    "main.8f31bd74.js.map": "/site-5-semestre/static/js/main.8f31bd74.js.map",
     "453.fb826adb.chunk.js.map": "/site-5-semestre/static/js/453.fb826adb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab85fec3.css",
-    "static/js/main.0398964f.js"
+    "static/css/main.b4ef2188.css",
+    "static/js/main.8f31bd74.js"
   ]
 }
