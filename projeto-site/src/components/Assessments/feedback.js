@@ -29,6 +29,20 @@ function Feedback({ id }) {
             },
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                640: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 5
+                }
+            }
         });
 
         swiper4Ref.current = swiper4;
@@ -45,7 +59,7 @@ function Feedback({ id }) {
                 <div className='avaliacao-icon'>
                     <img src={Avaliacao} alt="estrelas de avaliação" id="estrela" />
                     <div className="google-container">
-                        <img src={Google} alt="estrelas de avaliação" id="google" />
+                        <img src={Google} alt="Logo do Google" id="google" />
                         <figcaption>Avaliação do Google</figcaption>
                     </div>
                 </div>
@@ -56,49 +70,81 @@ function Feedback({ id }) {
                     <div className="swiper-wrapper">
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card1)}>
                             <div className={`content-feedback ${selectedContent === card1 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                                <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card1}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card2)}>
                             <div className={`content-feedback ${selectedContent === card2 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                                <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card2}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card3)}>
                             <div className={`content-feedback ${selectedContent === card3 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                                <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card3}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card4)}>
                             <div className={`content-feedback ${selectedContent === card4 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                            <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card4}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card5)}>
                             <div className={`content-feedback ${selectedContent === card5 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                            <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card5}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card6)}>
                             <div className={`content-feedback ${selectedContent === card6 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                            <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card6}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card7)}>
                             <div className={`content-feedback ${selectedContent === card7 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                                <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card7}</p>
                             </div>
                         </div>
                         <div className="swiper-slide swiper-slide3" id="feedback-divcontent" onClick={() => handleSlideClick(card8)}>
                             <div className={`content-feedback ${selectedContent === card8 ? 'active' : ''}`}>
-                                <img src={Avaliacao} alt="estrelas de avaliação" />
+                                <div className="content-image-card">
+                                    <img src={Avaliacao} alt="estrelas de avaliação" id="estrelas" />
+                                    <img src={Google} alt='Logo do Google' id="google-card" />
+                                    <figcaption>Avaliação do Google</figcaption>
+                                </div>
                                 <p>{card8}</p>
                             </div>
                         </div>

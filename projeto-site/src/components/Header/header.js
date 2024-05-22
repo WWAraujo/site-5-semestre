@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useRef, useEffect } from 'react';
 import 'react-whatsapp-widget/dist/index.css';
 import youtube from '../../img/youtube.png';
 import logo from '../../img/logo-escuro.png';
 import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
 import { Toggle } from './Toogle/Toogle';
-
-
 
 function Header({ isLight, setIsLight }) {
 
@@ -22,6 +21,27 @@ function Header({ isLight, setIsLight }) {
     lastScrollTop = currentScroll;
   });
 
+
+  const checkboxRef = useRef(false);
+  const menuRef = useRef(null);
+  const burgerMenuRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (checkboxRef.current && !checkboxRef.current.contains(event.target)) {
+      if (checkboxRef.current.checked) {
+        checkboxRef.current.checked = false;
+      }
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  });
+
   return (
     <header className="App-header">
       <div className="header-logo">
@@ -30,11 +50,11 @@ function Header({ isLight, setIsLight }) {
         </a>
       </div>
       <div className="container-header">
-        <input type="checkbox" id="menu" className="container__button" />
-        <label for="menu">
+        <input type="checkbox" id="menu" className="container__button" ref={checkboxRef} />
+        <label htmlFor="menu" ref={burgerMenuRef}>
           <span className="burguer-menu__header container__image"></span>
         </label>
-        <ul className="menu-list">
+        <ul className="menu-list" ref={menuRef}>
           <li className="menu-list-item">
             <a href="#cardImage" className="menu-list-link">Home</a>
           </li>
@@ -48,32 +68,36 @@ function Header({ isLight, setIsLight }) {
             <a href="#budget" className="menu-list-link">Solicitar Orçamento</a>
           </li>
           <li className="menu-list-item">
-            <a href="#contato" className="menu-list-link">Contato</a>
+            <a href="#contact" className="menu-list-link">Contato</a>
           </li>
           <li className="social-media">
-            <a href="https://www.instagram.com/artevieira/" className="icon-instagram"><img className="logo-social-media" src={instagram} alt="instagram" /></a>
-            <a href="https://www.facebook.com/ArteVieiraEventos" className="icon-facebook"><img className="logo-social-media" src={facebook} alt="facebook" /></a>
-            <a href="https://www.youtube.com/@Artevieiracoquetelaria" className="icon-youtube"><img className="logo-social-media" src={youtube} alt="youtube" /></a>
+            <a href="https://www.instagram.com/artevieira/" className="icon-instagram">
+              <img className="logo-social-media" src={instagram} alt="instagram" />
+            </a>
+            <a href="https://www.facebook.com/ArteVieiraEventos" className="icon-facebook">
+              <img className="logo-social-media" src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.youtube.com/@Artevieiracoquetelaria" className="icon-youtube">
+              <img className="logo-social-media" src={youtube} alt="youtube" />
+            </a>
           </li>
           <p>Siga Nossas redes sociais</p>
         </ul>
         <nav className="navigation">
           <ul className="menu-extensive">
-            <li className="menu__item-header"><a href="#cardImage" className="menu__link" >Home</a></li>
-            <li className="menu__item-header"><a href="#about" className="menu__link" >Quem Somos</a></li>
+            <li className="menu__item-header"><a href="#cardImage" className="menu__link">Home</a></li>
+            <li className="menu__item-header"><a href="#about" className="menu__link">Quem Somos</a></li>
             <li className="menu__item-header"><a href="#carousel" className="menu__link">Eventos</a></li>
             <li className="menu__item-header"><a href="#budget" className="menu__link">Solicitar Orçamento</a></li>
-            <li className="menu__item-header"><a href="#contact" className="menu__link" >Contato</a></li>
+            <li className="menu__item-header"><a href="#contact" className="menu__link">Contato</a></li>
           </ul>
         </nav>
       </div>
-        <Toggle
-          isChecked={isLight}
-          handleChange={() => setIsLight(!isLight)}
-        />
-
+      <Toggle
+        isChecked={isLight}
+        handleChange={() => setIsLight(!isLight)}
+      />
     </header>
-
   );
 }
 
