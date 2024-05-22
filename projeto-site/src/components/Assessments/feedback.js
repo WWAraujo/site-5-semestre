@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
-import Avaliacao from '../imagem/avaliacao.png';
-import Google from '../imagem/pesquisa.png';
+import Swiper from 'swiper/bundle';
+import Google from '../../img/pesquisa.png';
+import Avaliacao from '../../img/avaliacao.png';
 
 function Feedback({ id }) {
 

@@ -1,24 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import logo from '../imagem/logo-escuro.png';
-import facebook from '../imagem/facebook.png';
-import instagram from '../imagem/instagram.png';
-import youtube from '../imagem/youtube.png';
-import '../App.css';
 import 'react-whatsapp-widget/dist/index.css';
+import youtube from '../../img/youtube.png';
+import logo from '../../img/logo-escuro.png';
+import facebook from '../../img/facebook.png';
+import instagram from '../../img/instagram.png';
+import { Toggle } from './Toogle/Toogle';
 
 
 
-function Header() {
+function Header({ isLight, setIsLight }) {
 
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", function () {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
-      // Rolando para baixo
-      document.querySelector(".App-header").style.top = "-110px"; // Ajuste o valor conforme necessário
+      document.querySelector(".App-header").style.top = "-110px";
     } else {
-      // Rolando para cima
       document.querySelector(".App-header").style.top = "0";
     }
     lastScrollTop = currentScroll;
@@ -27,7 +25,9 @@ function Header() {
   return (
     <header className="App-header">
       <div className="header-logo">
-        <img className="logo__image" src={logo} alt="Logo da Arte Vieira" />
+        <a href="#">
+          <img className="logo__image" src={logo} alt="Logo da Arte Vieira" />
+        </a>
       </div>
       <div className="container-header">
         <input type="checkbox" id="menu" className="container__button" />
@@ -67,6 +67,10 @@ function Header() {
           </ul>
         </nav>
       </div>
+        <Toggle
+          isChecked={isLight}
+          handleChange={() => setIsLight(!isLight)}
+        />
 
     </header>
 

@@ -1,5 +1,3 @@
-
-
 function About({id}) {
     const title = "Conheça a Arte Vieira";
 

@@ -5,26 +5,47 @@
 @import url("styles/footer.css");
 @import url("styles/feedbacks.css");
 @import url("styles/contact.css");
+@import url("styles/main-image.css");
 
 :root {
   --d: 1500ms;
   --angle: 90deg;
   --c1: #FFD700;
+  --nero: #232323;
   --branco: #ffffff;
-  --border-blue: #0ca5b0;
-  --azul-escuro: #0C1A38;
-  --cor-de-fundo: #021420;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+  --text-color-primary: #FBF8F3;
   --c2: rgba(168, 239, 255, 0.1);
-  --cor-de-fundo-secundaria: #0C1A38;
+  --text-color-secundary: #FBF8F3;
+  --background-color-primary: #021420;
+  --background-color-primary-2: #0C1A38;
+  --background-color-secundary: #021420;
   --fonte-principal: "Poppins", sans-serif;
 }
-
 
 .App {
   display: flex;
   min-width: 250px;
-  color: var(--branco);
   flex-direction: column;
+  color: var(--text-color-primary);
   font: 14px var(--fonte-principal);
-  background-color: var(--cor-de-fundo);
+  transition: background-color 0.25s ease-in-out;
+  background-color: var(--background-color-primary);
+}
+
+[data-theme="light"]{
+  --toggle-bg:#f0eb9d;
+  --toggle-fg: #ffd000;
+  --text-color-primary: #232323;
+  --background-color-primary:#FBF8F3;
+}
+ 
+[data-theme="light"] footer{
+  background-color: var(--branco);
+  color: var(--text-color-primary);
+}
+
+li {
+  list-style-type: none;
 }

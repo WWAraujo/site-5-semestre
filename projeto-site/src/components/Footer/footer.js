@@ -1,14 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import '../App.css';
 import 'react-whatsapp-widget/dist/index.css';
-import facebook from '../imagem/facebook.png';
-import instagram from '../imagem/instagram.png';
-import youtube from '../imagem/youtube.png';
-import logo from '../imagem/logo-escuro.png';
-import telefone from '../imagem/telefone.png';
-import whatsapp from '../imagem/whatsapp.png';
-import mapa from '../imagem/icon-mapa.png';
-import email from '../imagem/e-mail.png';
+import email from '../../img/e-mail.png';
+import mapa from '../../img/icon-mapa.png';
+import youtube from '../../img/youtube.png';
+import logo from '../../img/logo-escuro.png';
+import facebook from '../../img/facebook.png';
+import telefone from '../../img/telefone.png';
+import whatsapp from '../../img/whatsapp.png';
+import instagram from '../../img/instagram.png';
 
 function Footer({ id }) {
 
@@ -39,10 +37,10 @@ function Footer({ id }) {
             </ul>
           </div>
           <div className="email-address-numbers">
-            <p><img src={whatsapp} alt="imagem de um telefone" />(11) 95968-0087</p>
-            <p><img src={telefone} alt="imagem de um telefone" />(11) 3294-6448</p>
-            <p className="email"><img src={email} alt="imagem de um icone de email" />contato@artevieira.com</p>
-            <p className="address"><img src={mapa} alt="imagem de um icone de marcador de mapa" />Alameda Afonso Bocchiglieri, 327
+            <p><img src={whatsapp} alt="img de um telefone" />(11) 95968-0087</p>
+            <p><img src={telefone} alt="img de um telefone" />(11) 3294-6448</p>
+            <p className="email"><img src={email} alt="img de um icone de email" />contato@artevieira.com</p>
+            <p className="address"><img src={mapa} alt="img de um icone de marcador de mapa" />Alameda Afonso Bocchiglieri, 327
               Vila Arriete, São Paulo–SP</p>
           </div>
         </div>

@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--background-color-primary-2);
 }
 
 .feedback-title {
@@ -14,6 +14,7 @@
     text-align: center;
     margin: 3% auto 3%;
     text-transform: uppercase;
+    color: var(--text-color-secundary);
 }
 
 #cards {
@@ -24,12 +25,12 @@
     background-color: #e8e8e8;
 }
 
-.avaliacao-icon{
+.avaliacao-icon {
     display: flex;
     justify-content: space-between;
 }
 
-.google-container{
+.google-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,12 +44,12 @@
     object-fit: cover;
 }
 
-#google{
+#google {
     margin: 0;
     padding: 0;
     width: 25px;
     height: 25px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
 
 .card span {
@@ -117,6 +118,7 @@
     padding: 1em;
     height: 100px;
     display: flex;
+    color: black;
     transition: 0.25s;
     font-size: 0.35vw;
     text-align: justify;
@@ -124,7 +126,6 @@
     flex-direction: column;
     justify-content: center;
     margin: max(0.5rem, 0.5vw);
-    color: var(--cor-de-fundo);
     background-color: #e8e8e8;
 }
 

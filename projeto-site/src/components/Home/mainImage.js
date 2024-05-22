@@ -1,12 +1,6 @@
-import fotoInicio from '../imagem/001.JPG'
-import '../App.css';
 import 'react-whatsapp-widget/dist/index.css';
-import './../styles/cardImage.css'
+import fotoInicio from '../../img/001.JPG'
 
-/**
- * Icone com imagem
- * TODO: Renomear card e definir o propósito
- */
 function CardImage({id}) {
   return (
     <div className="container-image" id={id}>

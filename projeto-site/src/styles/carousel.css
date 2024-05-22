@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-de-fundo-secundaria);
+    background-color: var(--background-color-primary-2);
 }
 
 .title-carousel {
@@ -14,6 +14,7 @@
     text-align: center;
     margin: 3% auto 3%;
     text-transform: uppercase;
+    color: var(--text-color-secundary);
 }
 
 .swiper-slide1 {
@@ -29,7 +30,7 @@
     max-height: 450px;
     object-fit: cover;
     object-position: center;
-    border: 0.1rem solid #fff;
+    border: 0.1rem solid var(--branco);
     mask-image: linear-gradient(to top, transparent 20%, gray 50%);
 }
 
@@ -139,14 +140,14 @@ div.swiper-pagination {
     }
 
     .title-slide {
-        text-align: start;
         font-size: 2.1vw;
-        color: var(--cor-de-fundo);
+        text-align: start;
+        color: var(--background-color-primary-2);
     }
 
     .text-slide {
         font-size: 1.25em;
-        color: var(--cor-de-fundo);
+        color: var(--background-color-primary-2);
     }
 
     div.swiper-button-next,

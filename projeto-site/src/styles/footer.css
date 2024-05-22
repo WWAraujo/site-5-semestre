@@ -5,7 +5,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--cor-de-fundo);
 }
 
 .contact-content {
@@ -49,7 +48,7 @@
   width: 100%;
   padding: 1.4em;
   font-size: 2vw;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--text-color-primary);
 }
 
 @media screen and (min-width:768px) {
@@ -123,7 +122,7 @@
 
   .menu__item-footer a {
     padding: 5% 0;
-    color: #fff;
+    color: var(--text-color-primary);
     font-size: 0.9vw;
     font-weight: 600;
     text-decoration: none;

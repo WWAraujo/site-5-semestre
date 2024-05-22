@@ -1,8 +1,8 @@
+import '../../styles/contact.css';
 import React, { useState } from 'react';
 import SendMessage from '../../sendMessage';
-import Modal from "react-bootstrap/Modal"
-import Button from "react-bootstrap/Button"
-import '../../styles/contact.css'
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 // import IContact from '../interfaces/IContact.js';
 

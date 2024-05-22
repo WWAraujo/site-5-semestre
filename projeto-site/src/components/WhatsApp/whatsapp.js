@@ -1,6 +1,6 @@
 import { WhatsAppWidget } from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
-import './../styles/whatsapp.css'
+import '../../styles/whatsapp.css'
 
 function IconWhatsapp() {
 

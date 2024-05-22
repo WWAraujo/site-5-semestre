@@ -1,38 +1,38 @@
+import React, {useState} from 'react';
 import './App.css';
+import 'swiper/css/bundle';
+import 'swiper/css/bundle';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-whatsapp-widget/dist/index.css';
-import 'swiper/css/bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './header/header';
-import CardImage from './components/cardImage'
-import IconWhatsapp from './components/whatsapp';
-import About from './components/about';
-import Carousel from './components/carousel';
-// import Team from './components/team';
-import Feedback from './components/feedback';
-import Footer from './footer/footer';
-import Contact from './components/Contact/budget'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'swiper/css/bundle';
+import About from './components/About/about';
+import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
+import Contact from './components/Contact/budget';
+import Carousel from './components/Events/carousel';
+import CardImage from './components/Home/mainImage';
+import Feedback from './components/Assessments/feedback';
+import IconWhatsapp from './components/WhatsApp/whatsapp';
+
 
 function App() {
+  const [isLight, setIsLight] = useState(false);
 
   return (
-    <div className="App">
+    <div className="App" data-theme={isLight ? "light" : "dark"}>
 
       <div>
-        <Header/>
-        <CardImage id="cardImage"/>
+        <Header isLight={isLight} setIsLight={setIsLight}/>
+        <CardImage id="cardImage" />
         <About id="about" />
         <Carousel id="carousel" />
-        <Contact id="budget"/>
-        {/* <Team /> */}
-        
-        <Feedback id="feedback"/>
-        <Footer id="contact"/>
-        
+        <Contact id="budget" />
+        <Feedback id="feedback" />
+        <Footer id="contact" />
       </div>
 
       <IconWhatsapp />
+      
     </div>
   );
 }
