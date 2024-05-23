@@ -65,7 +65,7 @@
     width: 100%;
     padding: 2em 0;
     font-size: 1em;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--text-color-primary);
   }
 
   .contact-content {
@@ -82,6 +82,14 @@
     grid-row: 1/ span 2;
   }
 
+  .email-address-numbers{
+    font-size: 1.7vw;
+  }
+
+  .email-address-numbers img{
+    width: 3vw;
+  }
+
   .logo-image-contact {
     width: 100%;
     margin: auto;
@@ -90,6 +98,14 @@
   .social-media-contacts {
     display: flex;
     justify-content: center;
+  }
+
+  .social-media-icons{
+    font-size: 2vw;
+  }
+
+  .menu__item-footer > .menu__link::after{
+    background-color: var(--text-color-primary);
   }
 }
 
@@ -151,9 +167,17 @@
     flex-direction: column;
   }
 
+  .email-address-numbers{
+    font-size: 1vw;
+  }
+
+  .email-address-numbers img{
+    width: 1.8vw;
+  }
+
   .social-media-icons p {
     font-size: 1vw;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .social-media-contact {
@@ -167,12 +191,6 @@
     width: 30px;
   }
 
-  .App-footer>p {
-    margin: 0;
-    width: 100%;
-    padding: 1.4em;
-    font-size: 0.8vw;
-    border-top: 1px solid #fff;
-  }
+
 
 }
