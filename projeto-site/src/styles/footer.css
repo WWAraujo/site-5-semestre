@@ -25,6 +25,12 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-size: 2.7vw;
+}
+
+.email-address-numbers img{
+  width: 4vw;
+  margin-right: 1vw;
 }
 
 .social-media-icons {
@@ -35,6 +41,7 @@
   margin: auto auto 1em;
   flex-direction: column;
   align-items: space-between;
+  font-size: 3vw;
 }
 
 .social-media-contact {

@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color-primary-2);
+    background-color: var(--background-color-secundary);
 }
 
 .title-carousel {
@@ -26,8 +26,8 @@
     width: 100%;
     height: 100%;
     margin: auto;
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 90vw;
+    max-height: 90vw;
     object-fit: cover;
     object-position: center;
     border: 0.1rem solid var(--branco);
@@ -53,11 +53,13 @@
     width: 100%;
     font-size: 4vw;
     text-align: center;
+    color: var(--text-color-secundary);
 }
 
 .text-slide {
     width: 90%;
     font-size: 2.3vw;
+    color: var(--text-color-secundary);
 }
 
 div.swiper-button-next,

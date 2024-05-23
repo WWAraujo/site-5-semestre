@@ -19,8 +19,8 @@
   --c2: rgba(168, 239, 255, 0.1);
   --text-color-secundary: #FBF8F3;
   --background-color-primary: #021420;
-  --background-color-primary-2: #0C1A38;
-  --background-color-secundary: #021420;
+  --background-color-secundary: #0C1A38;
+  --background-color-primary-fixed: #021420;
   --fonte-principal: "Poppins", sans-serif;
 }
 
@@ -39,6 +39,8 @@
   --toggle-fg: #ffd000;
   --text-color-primary: #232323;
   --background-color-primary:#FBF8F3;
+  --background-color-secundary: #122756;
+  --background-color-primary-fixed: #122756;
 }
  
 [data-theme="light"] footer{

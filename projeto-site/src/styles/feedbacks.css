@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color-primary-2);
+    background-color: var(--background-color-secundary);
 }
 
 .feedback-title {
@@ -50,12 +50,12 @@
 
 #prev-feedback {
     left: 0;
-    margin-left: 7.5%;
+    margin-left: 6%;
 }
 
 #next-feedback {
     right: 0;
-    margin-right: 7.5%;
+    margin-right: 6%;
 }
 
 #prev-feedback,
