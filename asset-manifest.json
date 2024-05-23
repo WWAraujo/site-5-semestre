@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/site-5-semestre/static/css/main.1af2c9a5.css",
+    "main.css": "/site-5-semestre/static/css/main.da1135bd.css",
     "main.js": "/site-5-semestre/static/js/main.75960f6a.js",
     "static/js/453.fb826adb.chunk.js": "/site-5-semestre/static/js/453.fb826adb.chunk.js",
     "static/media/001.JPG": "/site-5-semestre/static/media/001.e5df4c7c6d8e1a2eca22.JPG",
@@ -12,12 +12,12 @@
     "static/media/logo-escuro.png": "/site-5-semestre/static/media/logo-escuro.c46b79423a66cfbabdc7.png",
     "static/media/backgroundimage.png": "/site-5-semestre/static/media/backgroundimage.530b9603de388177900c.png",
     "index.html": "/site-5-semestre/index.html",
-    "main.1af2c9a5.css.map": "/site-5-semestre/static/css/main.1af2c9a5.css.map",
+    "main.da1135bd.css.map": "/site-5-semestre/static/css/main.da1135bd.css.map",
     "main.75960f6a.js.map": "/site-5-semestre/static/js/main.75960f6a.js.map",
     "453.fb826adb.chunk.js.map": "/site-5-semestre/static/js/453.fb826adb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af2c9a5.css",
+    "static/css/main.da1135bd.css",
     "static/js/main.75960f6a.js"
   ]
 }
