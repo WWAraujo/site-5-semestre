@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About/about';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
-import Contact from './components/Contact/budget';
+import Contact from './components/Budget/budget';
 import Carousel from './components/Events/carousel';
 import CardImage from './components/Home/mainImage';
 import Feedback from './components/Assessments/feedback';

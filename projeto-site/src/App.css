@@ -1,27 +1,16 @@
 @import url("styles/carousel.css");
-@import url("styles/header.css");
-@import url("styles/about.css");
-@import url("styles/team.css");
-@import url("styles/footer.css");
 @import url("styles/feedbacks.css");
-@import url("styles/contact.css");
-@import url("styles/main-image.css");
 
 :root {
-  --d: 1500ms;
-  --angle: 90deg;
-  --c1: #FFD700;
-  --nero: #232323;
   --branco: #ffffff;
-  --toggle-bg: #283452;
-  --toggle-fg: #00a6ff;
+  --toggle-bg: #454545;
+  --toggle-fg: #6c6c6c;
   --text-color-primary: #FBF8F3;
-  --c2: rgba(168, 239, 255, 0.1);
   --text-color-secundary: #FBF8F3;
   --background-color-primary: #021420;
   --background-color-secundary: #0C1A38;
-  --background-color-primary-fixed: #021420;
   --fonte-principal: "Poppins", sans-serif;
+  --contrast-logo: .2;
 }
 
 .App {
@@ -35,12 +24,12 @@
 }
 
 [data-theme="light"]{
-  --toggle-bg:#f0eb9d;
-  --toggle-fg: #ffd000;
+  --toggle-bg:#DEDEDE;
+  --toggle-fg: #ffffff;
   --text-color-primary: #232323;
   --background-color-primary:#FBF8F3;
   --background-color-secundary: #122756;
-  --background-color-primary-fixed: #122756;
+  --contrast-logo: .5
 }
  
 [data-theme="light"] footer{

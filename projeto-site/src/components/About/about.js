@@ -1,5 +1,7 @@
-function About({id}) {
-    const title = "Conheça a Arte Vieira";
+import styled from 'styled-components'
+
+function About({ id }) {
+    const title = "Conheça a Arte Vieira"
 
     const content = "Em 2012, nascia a Arte Vieira Coquetelaria, " +
         "Nossa missão é proporcionar aos nossos clientes e seus convidados a melhor experiência em coquetelaria. " +
@@ -9,17 +11,49 @@ function About({id}) {
         "Prêmios e reconhecimentos " +
         "A excelência na prestação de serviço que nos caracteriza já reflete nos prêmios conquistados nos últimos anos: 2015 à 2018, Prêmio qualidade Brasil na categoria prestação de serviço, já em 2016 – Top Of Bussiness.";
 
+    const ContainerAbout = styled.section`
+            margin: 0;
+            width: 100%;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+        `
 
+    const Introdution = styled.div`
+            margin: 1%;
+
+            @media screen and (min-width: 1024px) {
+            width: 70%;
+            }
+        `
+
+    const TituloAbout = styled.h1`
+            font-size: 4vw;
+            font-weight: 600;
+
+            @media screen and (min-width: 768px) {                
+                font-size:2.5vw;
+            }
+        `
+
+    const ContentAbout = styled.p`
+            font-size: 2.3vw;
+            font-weight: 300;
+            text-align: justify;
+
+            @media screen and (min-width:1024px) {
+                font-size: 1.15vw;
+                line-height: 1.7em;
+            }
+        `
 
     return (
-        <div className="container-about" id={id}>
-            <div class="about-introdution">
-                <div class="about-title-content">
-                    <h1>{title}</h1>
-                    <p>{content}</p>
-                </div>
-            </div>
-        </div>
+        <ContainerAbout id={id}>
+            <Introdution >
+                <TituloAbout>{title}</TituloAbout>
+                <ContentAbout>{content}</ContentAbout>
+            </Introdution>
+        </ContainerAbout>
     )
 
 }
